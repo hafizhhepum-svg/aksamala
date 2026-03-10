@@ -34,7 +34,7 @@
 
 \title[Article Title]{Article Title}
 
-\author*[1]{\fnm{Aksamala} \sur{Arfendi}}
+\author[1]{\fnm{Aksamala} \sur{Arfendi}}
 \author[1]{\fnm{Eny} \sur{Latifah}}
 \author*[1]{\fnm{Hafizh} \sur{Prihtiadi}}\email{hafizhp.fmipa@um.ac.id}
 
@@ -42,8 +42,10 @@
 
 \abstract{Air pollution and climate change are general problems for society. This paper proposes an integrated analysis of the Air Quality Index (AQI) and meteorological conditions over Indonesia. The column-based data integration model is applied to create integrated data of the Air Quaility Index and meteorological conditions. The integrated data is then used to generate a causal graph using the PC algorithm. The causal graph reveals that there exist casual relationships between pollutants and meteorological conditions, e.g, humidity, rainfall, wind speed, and duration of sunshine affect particulate matter 10 (PM$_{10}$), wind speed affects sulfur dioxide SO$_{2}$; temperature affects ozone (O$_{3}$). The historical data records that the average wind speed is decreased and the nubre of unhealthy days has risen. Ozone and particulate matter are two pollutants that mainly influence poor air quality in Jakarta. The integrated data is also used to train Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) for forecasting. Experimental results show that LSTM using integrated data produces smaller errors for forecasting AQI and meteorological conditions.
 }
+The results showed that
+highlighting this study's importance in supporting strategic planning and providing an early warning system to reduce outdoor activity during extreme pollution.
+\keywords{air pollution, machine learning, GHE}
 
-\keywords{Air Pollution, machine learning}
 
 \maketitle
 \section{Introduction}\label{sec1}
@@ -53,6 +55,12 @@
 	The Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG) reported that in 2024, air quality and meteorological conditions in Indonesia exhibited a strong interconnection. Elevated concentrations of greenhouse gases (CO$_2$, CH$_4$, and N$_2$O) contributed to an increase in the national mean surface temperature of up to $0.8^{\circ}\mathrm{C}$, making 2024 the warmest year on record. These conditions were also associated with the occurrence of acid rain, with observed rainfall pH values ranging from 4.33 to 6.53 across multiple regions \cite{BidangKlimatologiBadanMeteorologi2024}.
 	Many studies have adopted ML models for Air Pollution Standard prediction across various urban regions, leveraging multiple pollutants and meteorological parameters.
 	This study was conducted to examine the relationship between air pollutants and meteorological conditions in Indonesia. The main issue in this study is how to analyze the relationship between surface-level air pollution and meteorological conditions in Indonesia. This article proposes an integrated analysis between the Air Quality Index (AQI) and meteorological conditions using a machine learning approach, integrating surface air pollutant concentrations to capture the dynamic interaction between air quality and atmospheric variability. This article applies the Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) methods to predict AQI values and meteorological variables. The main contribution of this research is the development of an integration framework to analyze the interdependence between variables and to predict future AQI values and meteorological conditions, with a case study in Indonesia.
+
+
+Satellite
+TROPOMI provides global daily coverage in continuous 5.5 $\times$ km$^{2}$ (nadir) pixels, increasing the data density relative to GOSAT by more than 2 orders of magnitude through the use of an imaging grating spectrometer. It measures in the 2.3 $\mu$m band, where the CO$_{2}$ proxy approach is not possible, with a spectral resolution of 0.25 nm. Retrieval of XCH$_{4}$ by TROPOMI employs a full-physics approach in which surface albedo and atmospheric scattering properties are retrieved to gether with XCH$_{4}$, utilizing additional information from the near-infrared (NIR) band to TROPOMI
+
+We considered two candidates ML methods (Gated Recurrent Unit and Long Short-Term Memory) that rely on ensembles of decision trees (Kingsford, 2008-01). 
 
 \section{Results}\label{sec2}
 
@@ -85,11 +93,12 @@ The AQI standard values are categorized as good (1--50), moderate (51--100), unh
 
 In this study, the utilized models have been developed and enhanced in order to improve the accuracy rate. Through developing the model, path loss datasets have been acquired. The datasets have been divided into two parts, training and testing. The training sets covered 80\% of the data utilized, while the remaining 20\% was used for testing. In order to ensure the validation of the model, 15\% of the training data has been allocated to validate the performance of the model. Furthermore, the datasets have been pre-processed and the missed values have been estimated through interpolation method. On the other hand, in order to get the intended consequent modeling outcome, hyper-parametr tuning or optimization defines the robust process of identifying and determining the optimal viable values of hyper-parameter (paper prediction malaysia)
 
-\subsection{Long short-term memory (LSTM).}
+\subsection{Long Short-Term Memory (LSTM).}
 Long short-term memory (LSTM) is an efficient gradient-based method~\cite{}(paper jakarta). LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory. Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
 
 Furthermore, $i_t$, $f_t$, and $o_t$ represent the input gate, forget gate,  and output gate, while $W^{(i)}$, $W^{(f)}$, $W^{(o)}$, $W^{(c)}$,  $U^{(i)}$, $U^{(f)}$, $U^{(o)}$, and $U^{(c)}$ are the corresponding weight matrices.  The mathematical formulation of the LSTM memory unit is given by Eqs.~(4)--(9) as follows:
 
+tambahkan struktur LSTM Schematic,
 \begin{equation}
 i_t = \sigma \left( W^{(i)} X_t + U^{(i)} O_{t-1} \right),
 \tag{4}
@@ -194,7 +203,6 @@ In this research, GRU and LSTM in terms of 24-and 12-hours datasets. The compari
 \subsection{Dataset}
 This paper use AQI and satellite data ERA5 conditions in Indonesia. The AQI data owned by DKI Jakarta Provincial Government can be accessed at (perlu cite aja). The air quality dataset is daily records Air Quality Index (AQI) of  PM$_{2.5}$, SO$_{2}$, CO, and NO$_{2}$ from 2014 to 2024.
 
-
 \section*{Results}
 The datasets are containing less than 5\% missing values. The missing values are filled up using an average value of the observed variables from 7 days before the observed date. After preprocessing phase, it implements column-based integration to create a single formed data from AQI and meteorological condition datasets. The integrated data is used to generate a causal graph and to train models for forecasting.
 
@@ -208,6 +216,11 @@ The datasets are containing less than 5\% missing values. The missing values are
     \caption{Pearson correlation heatmap between meteorological variables and air pollutants.}
     \label{fig:heatmap}
 \end{figure}
+
+\subsection{The proposed method}
+This paper proposes an integral analysis of air pollution data and meteorological condition to analyze the air quality in Indonesia. The proposed method is illustrated in Fig 1(ref). The stages of the proposed method are data integration, causal graph generation, and forecasting. The integration process of meteorological data and AQI data use column-based integration. The datasets are time series data with numerical values. The idea of data integration has been used to learn simultaneously from multiple data sensor. The integration data requires not only the same date for each sample but also the same number of samples from all resources. In this paper, the integrated data is a single table containing variables from meteorological data anda AQI data. This data is then used as input for generating a causal graph and forecasting. A causal graph is generated using the PC algorithm. LSTM and GRU are implemented for forecasting.
+This paper uses the PC algorithm from $bnlearn$ in the R package. A causal graph is generated in R studio. It also implements LSTM and GRU from TensorFlow Keras. The forecasting is run in Jupyter Notebook for Python. LSTM and GRU models consist of stacked layers with 128 and 64 units, dropout layer and dense layer. LSTM and GRU are run for 50 epochs and they implement the Softmax activation function. This paper uses multivariate forescasting. The experiments use integrated and not integrated data. The letter $i$ and $p$ indicate that the algorithm is implemented for forecasting using integrated data and not integrated data, respectively. A not-integrated data refers to AQI data or a meteorological conditions dataset. An integrated dataset is a dataset containing AQI and meteorological conditions obtained from data integration process. This paper runs multivariate forecasting in 3 different scenarios:
+
 
 
 (Noted) perlu gambar 3. the actual data (A) dan forecasting (B) of AQI
