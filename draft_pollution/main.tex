@@ -1,0 +1,301 @@
+\documentclass[sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+\newtheorem{proposition}[theorem]{Proposition}% 
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[Article Title]{Article Title}
+
+\author*[1]{\fnm{Aksamala} \sur{Arfendi}}
+\author[1]{\fnm{Eny} \sur{Latifah}}
+\author*[1]{\fnm{Hafizh} \sur{Prihtiadi}}\email{hafizhp.fmipa@um.ac.id}
+
+\affil*[1]{\orgdiv{Department of Physics}, \orgname{Universitas Negeri Malang}, \orgaddress{\street{Jl. Semarang No. 5}, \city{Malang}, \postcode{65145}, \state{Malang}, \country{Indonesia}}}
+
+\abstract{Air pollution and climate change are general problems for society. This paper proposes an integrated analysis of the Air Quality Index (AQI) and meteorological conditions over Indonesia. The column-based data integration model is applied to create integrated data of the Air Quaility Index and meteorological conditions. The integrated data is then used to generate a causal graph using the PC algorithm. The causal graph reveals that there exist casual relationships between pollutants and meteorological conditions, e.g, humidity, rainfall, wind speed, and duration of sunshine affect particulate matter 10 (PM$_{10}$), wind speed affects sulfur dioxide SO$_{2}$; temperature affects ozone (O$_{3}$). The historical data records that the average wind speed is decreased and the nubre of unhealthy days has risen. Ozone and particulate matter are two pollutants that mainly influence poor air quality in Jakarta. The integrated data is also used to train Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) for forecasting. Experimental results show that LSTM using integrated data produces smaller errors for forecasting AQI and meteorological conditions.
+}
+
+\keywords{keyword1, Keyword2, Keyword3, Keyword4}
+
+
+\maketitle
+\section{Introduction}\label{sec1}
+
+	The World Health Organization (WHO) estimates that approximately 7 million deaths worldwide each year are attributable to air pollution \cite{WorldHealthOrganization2024}. In Indonesia, air pollution is estimated to reduce average life expectancy by about 1.2 years, resulting in an estimated total loss of 309 million life-years due to air pollution \cite{Madrigano2024}. The transportation sector is identified as the primary source of air pollution; according to the European Environment Agency (EEA), transportation activities contribute approximately $56{,}5\%$ of total air pollutant emissions \cite{EEA2022Transport}. Moreover, the rapid growth in motor vehicle ownership has exacerbated emission levels, with the number of registered motor vehicles in Indonesia reaching 146.8 million units in 2018 and exhibiting an average annual growth rate of $8{,}3\%$ \cite{Dimension2022}.
+	Particulate matter with a diameter of $\leq 2.5,\mu\text{m}$ (\textit{PM}${2.5}$) is one of the major forms of air pollution that poses serious risks to human health. \textit{PM}${2.5}$ consists of {\itshape primary} and {\itshape secondary} particles, the latter being formed through chemical reactions in the atmosphere, and is commonly associated with various gaseous pollutants such as {\itshape carbon monoxide} (CO), {\itshape nitrogen dioxide} (NO$_2$), and {\itshape sulfur dioxide} (SO$2$). The concentration of \textit{PM}${2.5}$ is considered to be at an unhealthy level when it exceeds air quality threshold values, namely above 55.5~$\mu$g/m$^3$ according to the Indonesian Air Pollution Standard Index (ISPU), or above 15~$\mu$g/m$^3$ based on the World Health Organization (WHO) air quality guidelines.
+	The Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG) reported that in 2024, air quality and meteorological conditions in Indonesia exhibited a strong interconnection. Elevated concentrations of greenhouse gases (CO$_2$, CH$_4$, and N$_2$O) contributed to an increase in the national mean surface temperature of up to $0.8^{\circ}\mathrm{C}$, making 2024 the warmest year on record. These conditions were also associated with the occurrence of acid rain, with observed rainfall pH values ranging from 4.33 to 6.53 across multiple regions \cite{BidangKlimatologiBadanMeteorologi2024}.
+	Many studies have adopted ML models for Air Pollution Standard prediction across various urban regions, leveraging multiple pollutants and meteorological parameters.
+	This study was conducted to examine the relationship between air pollutants and meteorological conditions in Indonesia. The main issue in this study is how to analyze the relationship between surface-level air pollution and meteorological conditions in Indonesia. This article proposes an integrated analysis between the Air Quality Index (AQI) and meteorological conditions using a machine learning approach, integrating surface air pollutant concentrations to capture the dynamic interaction between air quality and atmospheric variability. This article applies the Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) methods to predict AQI values and meteorological variables. The main contribution of this research is the development of an integration framework to analyze the interdependence between variables and to predict future AQI values and meteorological conditions, with a case study in Indonesia.
+
+\section{Results}\label{sec2}
+
+\section{Methods}\label{sec11}
+Konsentrasi massa aerosol di permukaan diestimasi dari massa kolom aerosol dengan mempertimbangkan tinggi lapisan batas atmosfer (*boundary layer height*, BLH). Dengan asumsi bahwa aerosol tercampur secara homogen di dalam boundary layer setinggi $H$, massa kolom aerosol pada boundary layer ($\mathrm{TC}_{\mathrm{BL}}$, kg m$^{-2}$) dapat didekati sebagai hasil kali antara konsentrasi massa aerosol permukaan dan tinggi boundary layer, yaitu $\mathrm{TC}_{\mathrm{BL}} \approx C_{\mathrm{surf}} \cdot H$. Berdasarkan hubungan tersebut, konsentrasi massa aerosol di permukaan dapat dihitung melalui
+
+\begin{equation}
+C_{\mathrm{surf}} = \frac{\mathrm{TC}_{\mathrm{BL}}}{H},
+\end{equation}
+
+dengan satuan kg m$^{-3}$. Untuk keperluan analisis kualitas udara, konsentrasi tersebut kemudian dikonversi ke satuan $\mu$g m$^{-3}$ dengan mengalikan faktor konversi $10^{9}$, sehingga diperoleh
+
+\begin{equation}
+C_{\mathrm{surf}} = \frac{\mathrm{TC}_{\mathrm{BL}}}{H} \times 10^{9}.
+\end{equation}
+
+Pendekatan ini banyak digunakan dalam studi penginderaan jauh untuk menghubungkan observasi aerosol berbasis kolom dengan konsentrasi aerosol di permukaan, di mana BLH berperan sebagai parameter penghubung utama antara informasi kolom dan kualitas udara permukaan.
+
+\subsection{Air Quality Index (AQI)}
+
+The Ministry of Environment and Forestry of the Republic of Indonesia measures the Air Quality Index (AQI) using Eq.~(1). In this equation, $I$, $I_a$, $I_b$, $L_a$, $L_b$, and $L_x$ represent the AQI value, the upper AQI limit, the lower AQI limit, the upper limit of ambient concentration, the lower limit of ambient concentration, and the measured ambient concentration, respectively.
+
+\begin{equation}
+I = \frac{I_a - I_b}{L_a - L_b} \left( L_x - L_b \right) + I_b
+\tag{1}
+\end{equation}
+
+The AQI standard values are categorized as good (1--50), moderate (51--100), unhealthy (101--200), very unhealthy (201--300), and hazardous ($\geq$301).
+
+
+In this study, the utilized models have been developed and enhanced in order to improve the accuracy rate. Through developing the model, path loss datasets have been acquired. The datasets have been divided into two parts, training and testing. The training sets covered 80\% of the data utilized, while the remaining 20\% was used for testing. In order to ensure the validation of the model, 15\% of the training data has been allocated to validate the performance of the model. Furthermore, the datasets have been pre-processed and the missed values have been estimated through interpolation method. On the other hand, in order to get the intended consequent modeling outcome, hyper-parametr tuning or optimization defines the robust process of identifying and determining the optimal viable values of hyper-parameter (paper prediction malaysia)
+
+\subsection{Long short-term memory (LSTM).}
+Long short-term memory (LSTM) is an efficient gradient-based method~\cite{}(paper jakarta). LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory. Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
+
+Furthermore, $i_t$, $f_t$, and $o_t$ represent the input gate, forget gate,  and output gate, while $W^{(i)}$, $W^{(f)}$, $W^{(o)}$, $W^{(c)}$,  $U^{(i)}$, $U^{(f)}$, $U^{(o)}$, and $U^{(c)}$ are the corresponding weight matrices.  The mathematical formulation of the LSTM memory unit is given by Eqs.~(4)--(9) as follows:
+
+\begin{equation}
+i_t = \sigma \left( W^{(i)} X_t + U^{(i)} O_{t-1} \right),
+\tag{4}
+\end{equation}
+
+\begin{equation}
+f_t = \sigma \left( W^{(f)} X_t + U^{(f)} O_{t-1} \right),
+\tag{5}
+\end{equation}
+
+\begin{equation}
+\tilde{S}_t = \tanh \left( W^{(c)} X_t + U^{(c)} O_{t-1} \right),
+\tag{6}
+\end{equation}
+
+\begin{equation}
+S_t = f_t \circ S_{t-1} + i_t \circ \tilde{S}_t,
+\tag{7}
+\end{equation}
+
+\begin{equation}
+o_t = \sigma \left( W^{(o)} X_t + U^{(o)} O_{t-1} \right),
+\tag{8}
+\end{equation}
+
+\begin{equation}
+O_t = o_t \circ \tanh (S_t).
+\tag{9}
+\end{equation}
+
+\subsection{Gated recurrent unit (GRU).}
+
+Gated recurrent unit (GRU) is a type of recurrent neural network (RNN) that employs a gating mechanism to control the flow of information.  Let $W_z$, $W_r$, $W$, $U_z$, $U_r$, $U$, $b_z$, $b_r$, and $b$ denote the model parameters, and let $\odot$ represent element-wise multiplication. 
+
+For the $j$-th hidden unit, GRU introduces a reset gate $r_t^j$ and an update gate $z_t^j$  to regulate the hidden state $h_t^j$ at each time step $t$.  The mathematical formulation of the GRU unit is given by Eqs.~(10)--(13) as follows:
+
+\begin{equation}
+z_t = \sigma \left( W_z X_t + U_z h_{t-1} + b_z \right),
+\tag{10}
+\end{equation}
+
+\begin{equation}
+r_t = \sigma \left( W_r X_t + U_r h_{t-1} + b_r \right),
+\tag{11}
+\end{equation}
+
+\begin{equation}
+\tilde{h}_t = \tanh \left( W X_t + U \left( r_t \odot h_{t-1} \right) + b \right),
+\tag{12}
+\end{equation}
+
+\begin{equation}
+h_t = \left( 1 - z_t \right) \odot h_{t-1} + z_t \odot \tilde{h}_t .
+\tag{13}
+\end{equation}
+
+\subsection{Evaluation metrics}
+The criteria by which model performance is assessed must be clearly identified (ref.). In this research model performance is goind to be assessed on four statistical indexes.
+
+\subsubsection{Coefficient of determination (R$^{2}$)}
+R$^{2}$ is ratio of the disparity in the dependent variable which is predicted by the aid of independent variable. It is an indicator generated from regression analysis. In linear regression, the R$^{2}$ is also equal to the square of the correlation (R) between predicted P-value and actual O-values; owing to this, it is value from 0 to 1. In no correlation case, R$^{2}=0$ which means the independent variable incapable to predict the dependent variable. In no correlation error, R$^{2}=1$ which means the independent variable capable to predict dependent varibale with no error. If R$^{2}$ is between 0 and 1 refere to what extent is the ability of predicting the dependent variable.
+\begin{equation}
+R^2 = 1 - 
+\frac{\sum_{i=1}^{n}(O_i - P_i)^2}
+{\sum_{i=1}^{n}(O_i - O_m)^2},
+\qquad 0 \leq R^2 \leq 1
+\label{eq:r_square}
+\end{equation}
+
+\subsubsection{Mean square error (MSE)}
+Mean Square Error (MSE) is an indicator for the predicting data by measuring the average of the squares of the errors in which obtained from the average squarred difference among the predicted data and observed data. Indeed, it describes how to set of points is near to the regression line. As shown in Eq.~\eqref{eq:meansquarrerror}, it does this by taking the distances from the points to the regression line (these distance are the "error") and squaring them. Squaring is necessary to remove any negative signs.
+
+\begin{equation}
+\mathrm{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( y'_i - y_i \right)^2
+\tag{15}
+\label{eq:meansquareerror}
+\end{equation}
+
+\subsubsection{Root mean square error (RMSE)}
+It is an ordinary approach to identify the model's error in predicting quantitative data.
+\begin{equation}
+\mathrm{RMSE} = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} \left( y'_i - y_i \right)^2 }
+\tag{16}
+\label{eq:rootmeanse}
+\end{equation}
+
+\subsubsection{Mean Absolute Error (MAE)}
+Mean Absolute Error (MAE) is a metric used to evaluate the accuracy of a predictive model by measuring the average magnitude of the absolute differences between predicted values and actual observed values. It indicates how far, on average, the predictions deviate from the true values, without considering the direction of the errors. A lower MAE value indicates better model performance.
+
+%The evaluation metrics used for forecasting are the mean absolute error (MAE), mean square error (MSE), and root mean square error (RMSE). MAE reflects the actual magnitude of the prediction error, while RMSE evaluates the variability and accuracy of the data. Let $y'_i$, $y_i$, and $n$ denote the predicted value, the true value, and the number of samples, respectively. Equations (14--16) are used to calculate MAE, MSE, and RMSE, respectively 
+
+\begin{equation}
+\mathrm{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y'_i - y_i \right|
+\tag{14}
+\end{equation}
+
+\subsubsection{Uncertaintly Analysis}
+
+\subsubsection{Model selection}
+In this research, GRU and LSTM in terms of 24-and 12-hours datasets. The compariosn among all models will be implemented based on the performance indicator (R$^{2}$, RMSE, MSE, MAE, and WI). Furthermore, Taylor Diagram is constructed to clearly distinguish between all the prediction model utilized. Additionally, the uncertainty analysis is investigated for the best model selected, which is MLP, where the level of 95\% confidence and b-factor are identified.
+
+\subsection{Dataset}
+This paper use AQI and satellite data ERA5 conditions in Indonesia. The AQI data owned by DKI Jakarta Provincial Government can be accessed at (perlu cite aja). The air quality dataset is daily records Air Quality Index (AQI) of  PM$_{2.5}$, SO$_{2}$, CO, and NO$_{2}$ from 2014 to 2024.
+
+
+\section*{Results}
+The datasets are containing less than 5\% missing values. The missing values are filled up using an average value of the observed variables from 7 days before the observed date. After preprocessing phase, it implements column-based integration to create a single formed data from AQI and meteorological condition datasets. The integrated data is used to generate a causal graph and to train models for forecasting.
+
+(Noted) perlu gambar 1. The proposed method of an integration analysis of air pollution and meteorological conditions.
+
+(Noted) perlu gambar 2. A casual graph is generated from AQI and meteorological conditions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{./picture/correlation_heatmap.pdf}
+    \caption{Pearson correlation heatmap between meteorological variables and air pollutants.}
+    \label{fig:heatmap}
+\end{figure}
+
+
+(Noted) perlu gambar 3. the actual data (A) dan forecasting (B) of AQI
+
+(Noted) Tuliskan semua metodenya disini
+
+
+\section{Discussion}\label{sec12}
+
+xxxxx.
+
+\section{Conclusion}\label{sec13}
+
+xxxxx.
+
+\backmatter
+
+\bmhead{Declaration and competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\bmhead{Acknowledgements}
+This research was supported by Internal Grant Universitas Negeri Malang 2026.
+
+\section*{Declarations}
+
+Some journals require declarations to be submitted in a standardised format. Please check the Instructions for Authors of the journal to which you are submitting to see if you need to complete this section. If yes, your manuscript must contain the following sections under the heading `Declarations':
+
+\begin{itemize}
+\item Funding
+\item Conflict of interest/Competing interests (check journal-specific guidelines for which heading to use)
+\item Ethics approval and consent to participate
+\item Consent for publication
+\item Data availability 
+\item Materials availability
+\item Code availability 
+\item Author contribution
+\end{itemize}
+
+\noindent
+If any of the sections are not relevant to your manuscript, please include the heading and write `Not applicable' for that section. 
+
+%%===================================================%%
+%% For presentation purpose, we have included        %%
+%% \bigskip command. Please ignore this.             %%
+%%===================================================%%
+\bigskip
+\begin{flushleft}%
+Editorial Policies for:
+
+\bigskip\noindent
+Springer journals and proceedings: \url{https://www.springer.com/gp/editorial-policies}
+
+\bigskip\noindent
+Nature Portfolio journals: \url{https://www.nature.com/nature-research/editorial-policies}
+
+\bigskip\noindent
+\textit{Scientific Reports}: \url{https://www.nature.com/srep/journal-policies/editorial-policies}
+
+\bigskip\noindent
+BMC journals: \url{https://www.biomedcentral.com/getpublished/editorial-policies}
+\end{flushleft}
+
+\begin{appendices}
+
+\section{Section title of first appendix}\label{secA1}
+
+An appendix contains supplementary information that is not an essential part of the text itself but which may be helpful in providing a more comprehensive understanding of the research problem or it is information that is too cumbersome to be included in the body of the paper.
+
+%%=============================================%%
+%% For submissions to Nature Portfolio Journals %%
+%% please use the heading ``Extended Data''.   %%
+%%=============================================%%
+
+%%=============================================================%%
+%% Sample for another appendix section			       %%
+%%=============================================================%%
+
+%% \section{Example of another appendix section}\label{secA2}%
+%% Appendices may be used for helpful, supporting or essential material that would otherwise 
+%% clutter, break up or be distracting to the text. Appendices can consist of sections, figures, 
+%% tables and equations etc.
+
+\end{appendices}
+
+\bibliography{atmospheric}% common bib file
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+
+\end{document}
