@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.13)  16 MAR 2026 11:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.13)  16 MAR 2026 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -675,135 +675,32 @@ Package hyperref Info: Link coloring ON on input line 33.
 \openout3 = `main.out'.
 
 \c@lstlisting=\count360
-
-
-! LaTeX Error: Unicode character ₓ (U+2093)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...llutants, including nitrogen oxides (NOₓ
-                                                  ), carbon monoxide (CO), s...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...arbon monoxide (CO), sulfur dioxide (SO₂
-                                                  ), and fine particulate ma...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...SO₂), and fine particulate matter (PM₂
-                                                  .₅), are key contributor...
-
-? 
-
-! LaTeX Error: Unicode character ₅ (U+2085)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...�), and fine particulate matter (PM₂.₅
-                                                  ), are key contributors to...
-
-? 
-
-! LaTeX Error: Unicode character ₓ (U+2093)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...nd drivers of key pollutants such as NOₓ
-                                                  , CO, SO₂, and PM₂.₅...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...of key pollutants such as NOₓ, CO, SO₂
-                                                  , and PM₂.₅ is therefo...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...utants such as NOₓ, CO, SO₂, and PM₂
-                                                  .₅ is therefore essentia...
-
-? 
-
-! LaTeX Error: Unicode character ₅ (U+2085)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 ...ts such as NOₓ, CO, SO₂, and PM₂.₅
-                                                   is therefore essential fo...
-
-? 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
-
-{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 56.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 58.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 56.
+(Font)              size <8> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 56.
+(Font)              size <8> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 56.
+(Font)              size <8> substituted on input line 58.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
 
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 56
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 58
 .
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -811,69 +708,76 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 56.
+(Font)              size <8> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 56.
+(Font)              size <8> substituted on input line 58.
 
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 56
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 58
 .
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 56.
+(Font)              size <6> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.52061> not available
-(Font)              size <6> substituted on input line 56.
+(Font)              size <6> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 56.
+(Font)              size <6> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 56.
+(Font)              size <6> substituted on input line 58.
 
-LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 56.
+LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 58.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.51686> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 58.
 
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 56
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 58
 .
 
+
 Package natbib Warning: Citation `WorldHealthOrganization2024' on page 2 undefi
-ned on input line 59.
+ned on input line 61.
 
 
 Package natbib Warning: Citation `Madrigano2024' on page 2 undefined on input l
-ine 59.
+ine 61.
 
 
 Package natbib Warning: Citation `EEA2022Transport' on page 2 undefined on inpu
-t line 59.
+t line 61.
 
 
 Package natbib Warning: Citation `Dimension2022' on page 2 undefined on input l
-ine 59.
+ine 61.
 
 
 Package natbib Warning: Citation `BidangKlimatologiBadanMeteorologi2024' on pag
-e 2 undefined on input line 61.
+e 2 undefined on input line 63.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -882,106 +786,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-
-! LaTeX Error: Unicode character ₓ (U+2093)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...g multiple pollutant species such as NOₓ
-                                                  , CO, SO₂, and PM₂.₅...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...pollutant species such as NOₓ, CO, SO₂
-                                                  , and PM₂.₅ with large...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...pecies such as NOₓ, CO, SO₂, and PM₂
-                                                  .₅ with large-scale atmo...
-
-? 
-
-! LaTeX Error: Unicode character ₅ (U+2085)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...es such as NOₓ, CO, SO₂, and PM₂.₅
-                                                   with large-scale atmosphe...
-
-? 
-
-! LaTeX Error: Unicode character ₓ (U+2093)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 ... while pollutant concentration data (NOₓ
-                                                  , CO, SO₂, and PM₂.₅...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 ...utant concentration data (NOₓ, CO, SO₂
-                                                  , and PM₂.₅) are compi...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 ...ntration data (NOₓ, CO, SO₂, and PM₂
-                                                  .₅) are compiled from av...
-
-? 
-
-! LaTeX Error: Unicode character ₅ (U+2085)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 ...tion data (NOₓ, CO, SO₂, and PM₂.₅
-                                                  ) are compiled from availa...
-
-? 
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
+ [4{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+s1.enc}]
 Underfull \hbox (badness 2894) in paragraph at lines 95--96
 []\OT1/cmr/m/n/10 Pendekatan ini banyak digu-nakan dalam studi pengin-der-aan j
 auh untuk
@@ -990,32 +798,7 @@ auh untuk
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
-s1.enc}]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
+ [5]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
 has been already used, duplicate ignored
 <to be read again> 
@@ -1136,9 +919,6 @@ has been already used, duplicate ignored
                    \relax 
 l.141 \begin{equation}
                       
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
 has been already used, duplicate ignored
 <to be read again> 
@@ -1272,6 +1052,15 @@ has been already used, duplicate ignored
                    \relax 
 l.177 \begin{equation}
                       
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.183 \end{equation}
+                    ]
 
 LaTeX Warning: Reference `eq:meansquarrerror' on page 7 undefined on input line
  186.
@@ -1279,31 +1068,19 @@ LaTeX Warning: Reference `eq:meansquarrerror' on page 7 undefined on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) 
 has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.207 \begin{equation}
-                      
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.219 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) 
 has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.207 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.207 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.207 \begin{equation}
-                      
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.219 
+      ]
 LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 229.
 
 
@@ -1322,10 +1099,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.015> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
 (Font)              size <5> substituted on input line 229.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./picture/correlation_heatmap.pdf, id=149, 578.16pt x 505.89pt>
+<./picture/correlation_heatmap.pdf, id=177, 578.16pt x 505.89pt>
 File: ./picture/correlation_heatmap.pdf Graphic file (type pdf)
 <use ./picture/correlation_heatmap.pdf>
 Package pdftex.def Info: ./picture/correlation_heatmap.pdf  used on input line 
@@ -1335,8 +1109,8 @@ Package pdftex.def Info: ./picture/correlation_heatmap.pdf  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4}) 
-has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.248 
@@ -1344,98 +1118,31 @@ l.248
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.252 
-      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.252 
-       <./picture/correlation_heatmap.pdf>]
-
-! LaTeX Error: Unicode character ₓ (U+2093)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 ...s of atmospheric pollutants such as NOₓ
-                                                  , CO, SO₂, and fine part...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 ...heric pollutants such as NOₓ, CO, SO₂
-                                                  , and fine particulate mat...
-
-? 
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 ...SO₂, and fine particulate matter (PM₂
-                                                  .₅), which can significa...
-
-? 
-
-! LaTeX Error: Unicode character ₅ (U+2085)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 ...�, and fine particulate matter (PM₂.₅
-                                                  ), which can significantly...
-
-? 
-
+l.253 R
+       egional clustering for machine learning analysis - To better capture ...
+ <./picture/correlation_heatmap.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-
-! LaTeX Error: Unicode character ₂ (U+2082)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.269 ...gen oxides (NO) and sulfur dioxide (SO₂
-                                                  ), obtained from the atmos...
-
-? 
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 
 Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 292.
+(hyperref)                than one, level fixed on input line 290.
 
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 295.
+(hyperref)                than one, level fixed on input line 293.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 296.
 
- [12]
 (./main.bbl)
 
 Package natbib Warning: There were undefined citations.
@@ -1443,7 +1150,7 @@ Package natbib Warning: There were undefined citations.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [12]
 (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -1458,50 +1165,56 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: A218A543E5153344339407D5EB235939;3235
-(rerunfilecheck)             After:  9EA618CB475CF6A278C5FE3ABFDEE4E9;3857.
+(rerunfilecheck)             Before: C291D6C5E7BA2D0A970224A2D75623AA;4312
+(rerunfilecheck)             After:  B40B9998EA5A58497DB9BCFDDDD32EA4;3999.
  ) 
 Here is how much of TeX's memory you used:
- 14702 strings out of 467525
- 223067 string characters out of 5416347
- 651478 words of memory out of 5000000
- 43300 multiletter control sequences out of 15000+600000
+ 14697 strings out of 467525
+ 222979 string characters out of 5416347
+ 653456 words of memory out of 5000000
+ 43295 multiletter control sequences out of 15000+600000
  648478 words of font info for 125 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,12n,93p,1907b,487s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-0.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026basic/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026basic/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026basic/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026basic
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026b
-asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-26basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
-e/2026basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (13 pages, 304464 bytes).
+ 90i,12n,93p,1894b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section*.22} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.21} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmex10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/t
+ype1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2026basic/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basi
+c/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026ba
+sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026
+basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+26basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
+/texlive/2026basic/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (12 pages, 314078 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
+ 355 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
  61 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

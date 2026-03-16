@@ -32,22 +32,24 @@
 
 \begin{document}
 
-\title[Article Title]{Article Title}
+\title[Article Title]{Air pollution study over decade in Indonesia}
 
 \author[1]{\fnm{Aksamala} \sur{Arfendi}}
 \author[1]{\fnm{Eny} \sur{Latifah}}
 \author*[1]{\fnm{Hafizh} \sur{Prihtiadi}}\email{hafizhp.fmipa@um.ac.id}
 
-\affil*[1]{\orgdiv{Department of Physics}, \orgname{Universitas Negeri Malang}, \orgaddress{\street{Jl. Semarang No. 5}, \city{Malang}, \postcode{65145}, \state{Malang}, \country{Indonesia}}}
+\affil*[1]{\orgdiv{Department of Physics}, \orgname{Universitas Negeri Malang}, \city{Malang}, \postcode{65145}, \state{Malang}, \country{Indonesia}}
 
 \abstract{Air pollution and climate change are general problems for society. This paper proposes an integrated analysis of the Air Quality Index (AQI) and meteorological conditions over Indonesia. The column-based data integration model is applied to create integrated data of the Air Quaility Index and meteorological conditions. The integrated data is then used to generate a causal graph using the PC algorithm. The causal graph reveals that there exist casual relationships between pollutants and meteorological conditions, e.g, humidity, rainfall, wind speed, and duration of sunshine affect particulate matter 10 (PM$_{10}$), wind speed affects sulfur dioxide SO$_{2}$; temperature affects ozone (O$_{3}$). The historical data records that the average wind speed is decreased and the nubre of unhealthy days has risen. Ozone and particulate matter are two pollutants that mainly influence poor air quality in Jakarta. The integrated data is also used to train Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) for forecasting. Experimental results show that LSTM using integrated data produces smaller errors for forecasting AQI and meteorological conditions. (Paper Jakarta)
-}
+
 The results showed that
 highlighting this study's importance in supporting strategic planning and providing an early warning system to reduce outdoor activity during extreme pollution.
 
 Datanya CO, NO2, PM2, SO
 
-Air pollution has emerged as a critical environmental challenge with significant implications for public health, economic productivity, and sustainable development across the Indonesian archipelago. Major atmospheric pollutants, including nitrogen oxides (NOₓ), carbon monoxide (CO), sulfur dioxide (SO₂), and fine particulate matter (PM₂.₅), are key contributors to degraded air quality and elevated Air Quality Index (AQI) levels. Exposure to these pollutants has been strongly associated with respiratory diseases, cardiovascular disorders, and increased premature mortality, placing a substantial burden on public health systems. In addition to health impacts, poor air quality also generates significant economic losses through increased healthcare expenditures, reduced labor productivity, disruption of transportation and aviation, and decreased tourism activity. These challenges are particularly pronounced in Indonesia due to rapid urbanization, industrial activities, transportation emissions, and recurrent biomass burning events that frequently affect large parts of the region. Furthermore, the complex atmospheric dynamics of the Maritime Continent—characterized by monsoonal circulation, strong convection, and regional-scale transport of pollutants—create highly variable spatiotemporal pollution patterns. Understanding the behavior, variability, and drivers of key pollutants such as NOₓ, CO, SO₂, and PM₂.₅ is therefore essential for improving air quality management, supporting evidence-based environmental policy, and mitigating the socioeconomic and health impacts of air pollution across Indonesia. Machine learning approaches provide an effective framework for identifying complex nonlinear relationships among pollutants and meteorological variables, enabling more accurate assessment and prediction of AQI variability over the region.
+Air pollution has emerged as a critical environmental challenge with significant implications for public health, economic productivity, and sustainable development across the Indonesian archipelago. Major atmospheric pollutants, including nitrogen oxides (NO$_2$), carbon monoxide (CO), sulfur dioxide (SO$_2$), and fine particulate matter (PM$_{2.5}$), are key contributors to degraded air quality and elevated Air Quality Index (AQI) levels. Exposure to these pollutants has been strongly associated with respiratory diseases, cardiovascular disorders, and increased premature mortality, placing a substantial burden on public health systems. In addition to health impacts, poor air quality also generates significant economic losses through increased healthcare expenditures, reduced labor productivity, disruption of transportation and aviation, and decreased tourism activity. These challenges are particularly pronounced in Indonesia due to rapid urbanization, industrial activities, transportation emissions, and recurrent biomass burning events that frequently affect large parts of the region. Furthermore, the complex atmospheric dynamics of the Maritime Continent—characterized by monsoonal circulation, strong convection, and regional-scale transport of pollutants—create highly variable spatiotemporal pollution patterns. Understanding the behavior, variability, and drivers of key pollutants such as NO$_2$, CO, SO$_2$, and PM$_{2.5}$ is therefore essential for improving air quality management, supporting evidence-based environmental policy, and mitigating the socioeconomic and health impacts of air pollution across Indonesia. Machine learning approaches provide an effective framework for identifying complex nonlinear relationships among pollutants and meteorological variables, enabling more accurate assessment and prediction of AQI variability over the region.
+
+}
 
 \keywords{air pollution, machine learning, GHE,}
 
@@ -70,16 +72,14 @@ We considered two candidates ML methods (Gated Recurrent Unit and Long Short-Ter
 
 Machine learning (ML) algorithm have recently introduced as innovative developments in the bottom-up approaches to upscale data-driven in-situ models to spatially explicit gridded estimates. (paper thailand).
 
-Research Gap - Despite increasing concerns about air pollution in Indonesia, comprehensive studies on Air Quality Index (AQI) dynamics across the Indonesian archipelago remain limited. Most previous research has focused on localized urban air quality assessments, particularly in major cities such as Jakarta and Surabaya, and often relies primarily on ground-based monitoring stations. However, the spatial coverage of monitoring networks across Indonesia is still sparse and uneven, especially over remote islands and rural regions. Furthermore, conventional statistical approaches used in many studies may not adequately capture the complex nonlinear interactions between atmospheric pollutants and meteorological factors. Although machine learning methods have been widely applied in air quality studies in North America, Europe, and East Asia, their application in Indonesia remains relatively scarce, particularly in studies integrating multiple pollutant species such as NOₓ, CO, SO₂, and PM₂.₅ with large-scale atmospheric datasets. As a result, there is still a significant knowledge gap in understanding the large-scale spatiotemporal variability and predictive behavior of air pollution across the Indonesian Maritime Continent.
+Research Gap - Despite increasing concerns about air pollution in Indonesia, comprehensive studies on Air Quality Index (AQI) dynamics across the Indonesian archipelago remain limited. Most previous research has focused on localized urban air quality assessments, particularly in major cities such as Jakarta and Surabaya, and often relies primarily on ground-based monitoring stations. However, the spatial coverage of monitoring networks across Indonesia is still sparse and uneven, especially over remote islands and rural regions. Furthermore, conventional statistical approaches used in many studies may not adequately capture the complex nonlinear interactions between atmospheric pollutants and meteorological factors. Although machine learning methods have been widely applied in air quality studies in North America, Europe, and East Asia, their application in Indonesia remains relatively scarce, particularly in studies integrating multiple pollutant species such as NO$_2$, CO, SO$_2$, and PM$_{2.5}$ with large-scale atmospheric datasets. As a result, there is still a significant knowledge gap in understanding the large-scale spatiotemporal variability and predictive behavior of air pollution across the Indonesian Maritime Continent.
 
 Research Novelty - This study aims to address these limitations by integrating atmospheric reanalysis data from ERA5 produced by the European Centre for Medium-Range Weather Forecasts with satellite-based atmospheric composition products and ground-based observations to investigate air pollution dynamics over Indonesia. The novelty of this work lies in the combined use of multi-source datasets and machine learning techniques to analyze and predict AQI variability across the Indonesian archipelago. By coupling meteorological variables from ERA5 with satellite-derived pollutant indicators and surface air quality observations, this approach enables a more comprehensive representation of both atmospheric processes and pollutant transport mechanisms. The integration of these datasets within a machine learning framework allows the identification of complex nonlinear relationships among atmospheric conditions, pollutant concentrations, and AQI variations, providing improved predictive capability compared to traditional statistical methods.
 
 Framework Metdology
-The methodological framework of this study consists of several stages, including data acquisition, preprocessing, feature engineering, machine learning modeling, and model evaluation. Atmospheric and meteorological variables are first obtained from ERA5 datasets and satellite-based atmospheric composition products, while pollutant concentration data (NOₓ, CO, SO₂, and PM₂.₅) are compiled from available air quality monitoring networks. The datasets are then spatially and temporally aligned over the Indonesian domain and processed through data cleaning, normalization, and missing-value treatment. Relevant meteorological predictors such as temperature, humidity, wind speed, and radiation are incorporated as input features for the machine learning models. Several supervised learning algorithms are subsequently applied to estimate and predict AQI variability, including regression-based and ensemble learning approaches. Model performance is evaluated using standard statistical metrics such as the coefficient of determination (R²), root mean square error (RMSE), and mean absolute error (MAE). This framework allows the identification of dominant drivers of air pollution variability and improves predictive understanding of AQI dynamics over the complex atmospheric environment of the Indonesian archipelago.
+The methodological framework of this study consists of several stages, including data acquisition, preprocessing, feature engineering, machine learning modeling, and model evaluation. Atmospheric and meteorological variables are first obtained from ERA5 datasets and satellite-based atmospheric composition products, while pollutant concentration data (NO$_2$, CO, SO$_2$, and PM$_{2.5}$) are compiled from available air quality monitoring networks. The datasets are then spatially and temporally aligned over the Indonesian domain and processed through data cleaning, normalization, and missing-value treatment. Relevant meteorological predictors such as temperature, humidity, wind speed, and radiation are incorporated as input features for the machine learning models. Several supervised learning algorithms are subsequently applied to estimate and predict AQI variability, including regression-based and ensemble learning approaches. Model performance is evaluated using standard statistical metrics such as the coefficient of determination (R²), root mean square error (RMSE), and mean absolute error (MAE). This framework allows the identification of dominant drivers of air pollution variability and improves predictive understanding of AQI dynamics over the complex atmospheric environment of the Indonesian archipelago.
 
-\section{Results}\label{sec2}
-
-\section{Methods}\label{sec11}
+\section{Methods}\label{sec3}
 Konsentrasi massa aerosol di permukaan diestimasi dari massa kolom aerosol dengan mempertimbangkan tinggi lapisan batas atmosfer (*boundary layer height*, BLH). Dengan asumsi bahwa aerosol tercampur secara homogen di dalam boundary layer setinggi $H$, massa kolom aerosol pada boundary layer ($\mathrm{TC}_{\mathrm{BL}}$, kg m$^{-2}$) dapat didekati sebagai hasil kali antara konsentrasi massa aerosol permukaan dan tinggi boundary layer, yaitu $\mathrm{TC}_{\mathrm{BL}} \approx C_{\mathrm{surf}} \cdot H$. Berdasarkan hubungan tersebut, konsentrasi massa aerosol di permukaan dapat dihitung melalui
 
 \begin{equation}
@@ -252,7 +252,7 @@ This paper uses the PC algorithm from $bnlearn$ in the R package. A causal graph
 
 Regional clustering for machine learning analysis - To better capture spatial heterogeneity in pollutant behavior, the Indonesian archipelago is divided into several regional clusters based on geographical and climatic characteristics: Sumatra, Java, Kalimantan, Sulawesi, and Papua–Maluku. These clusters represent distinct environmental and anthropogenic conditions that influence air quality dynamics. For example, Java is characterized by high population density, industrial activities, and transportation emissions, while Sumatra and Kalimantan are frequently affected by biomass burning events associated with land clearing and peatland fires. Sulawesi and the eastern Indonesian region (Papua–Maluku) exhibit different atmospheric circulation patterns and relatively lower anthropogenic emissions. This regional clustering allows the machine learning models to capture localized pollutant behavior, improve predictive performance, and better represent the spatial variability of Air Quality Index (AQI) across the Indonesian archipelago.
 
-Motivation: biomass burning and transboundary pollution - Air quality over Indonesia is strongly influenced by both local emission sources and large-scale atmospheric transport processes. One of the dominant contributors to regional air pollution is biomass burning, particularly from peatland and forest fires occurring in Sumatra and Kalimantan during the dry season. These events release large amounts of atmospheric pollutants such as NOₓ, CO, SO₂, and fine particulate matter (PM₂.₅), which can significantly degrade air quality across the region. In addition to local emissions, transboundary pollution driven by regional atmospheric circulation can transport pollutants across national boundaries within Southeast Asia, affecting neighboring countries and contributing to regional haze events. The complex interaction between emission sources, meteorological conditions, and pollutant transport makes it essential to analyze the behavior of key pollutants using advanced analytical approaches. Integrating ERA5 atmospheric variables, satellite observations, and machine learning techniques provides an effective framework to investigate the spatiotemporal dynamics of air pollution and improve AQI prediction across the Indonesian Maritime Continent.
+Motivation: biomass burning and transboundary pollution - Air quality over Indonesia is strongly influenced by both local emission sources and large-scale atmospheric transport processes. One of the dominant contributors to regional air pollution is biomass burning, particularly from peatland and forest fires occurring in Sumatra and Kalimantan during the dry season. These events release large amounts of atmospheric pollutants such as NO$_2$, CO, SO$_2$, and fine particulate matter (PM$_{2.5}$), which can significantly degrade air quality across the region. In addition to local emissions, transboundary pollution driven by regional atmospheric circulation can transport pollutants across national boundaries within Southeast Asia, affecting neighboring countries and contributing to regional haze events. The complex interaction between emission sources, meteorological conditions, and pollutant transport makes it essential to analyze the behavior of key pollutants using advanced analytical approaches. Integrating ERA5 atmospheric variables, satellite observations, and machine learning techniques provides an effective framework to investigate the spatiotemporal dynamics of air pollution and improve AQI prediction across the Indonesian Maritime Continent.
 
 
 (Noted) perlu gambar 3. the actual data (A) dan forecasting (B) of AQI
@@ -266,7 +266,7 @@ ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather
 ERA5 is a data product (dataset) produced by assimilating many observational sources. It uses satellite observations, but it is not generated by one satellite mission.
 
 
-Atmospheric variables used in this study were obtained from the ERA5 reanalysis produced by the European Centre for Medium-Range Weather Forecasts through the Copernicus Climate Change Service data archive. The dataset was downloaded using the Copernicus Climate Data Store (CDS) in NetCDF format and subsequently processed using Python-based scientific libraries. The variables analyzed include outgoing longwave radiation (OLR), near-surface air temperature (2 m temperature), and atmospheric trace gases such as nitrogen oxides (NO) and sulfur dioxide (SO₂), obtained from the atmospheric composition products associated with the Copernicus reanalysis system. All variables were extracted over the Indonesian domain (6° N–11° S, 95° E–141° E) at a horizontal resolution of 0.25°. The preprocessing procedure involved spatial subsetting of the study region, temporal filtering, unit standardization, and removal of missing values. To reduce short-term variability and emphasize large-scale atmospheric behavior, hourly data were aggregated into daily and monthly means. Spatial averaging was then applied across the regional domain using area-weighted averaging based on latitude to account for grid cell differences. This spatiotemporal aggregation approach enables robust analysis of regional atmospheric variability and long-term climate signals over the Maritime Continent.
+Atmospheric variables used in this study were obtained from the ERA5 reanalysis produced by the European Centre for Medium-Range Weather Forecasts through the Copernicus Climate Change Service data archive. The dataset was downloaded using the Copernicus Climate Data Store (CDS) in NetCDF format and subsequently processed using Python-based scientific libraries. The variables analyzed include outgoing longwave radiation (OLR), near-surface air temperature (2 m temperature), and atmospheric trace gases such as nitrogen oxides (NO) and sulfur dioxide (SO$_2$), obtained from the atmospheric composition products associated with the Copernicus reanalysis system. All variables were extracted over the Indonesian domain (6° N–11° S, 95° E–141° E) at a horizontal resolution of 0.25°. The preprocessing procedure involved spatial subsetting of the study region, temporal filtering, unit standardization, and removal of missing values. To reduce short-term variability and emphasize large-scale atmospheric behavior, hourly data were aggregated into daily and monthly means. Spatial averaging was then applied across the regional domain using area-weighted averaging based on latitude to account for grid cell differences. This spatiotemporal aggregation approach enables robust analysis of regional atmospheric variability and long-term climate signals over the Maritime Continent.
 
 
 
@@ -276,15 +276,13 @@ Thailand is located at the center of the Indochinese peninsula, has the 10th lar
 
 Indonesia is located within the tropical Maritime Continent, a region that plays a crucial role in global atmospheric circulation and climate variability due to its complex land–sea distribution and intense convective activity. The study domain considered in this work covers the Indonesian archipelago approximately between 6° N–11° S latitude and 95° E–141° E longitude, encompassing the major islands of Sumatra, Java, Kalimantan, Sulawesi, Papua, and surrounding smaller island groups. This geographical domain is extracted from the ERA5 reanalysis produced by the European Centre for Medium-Range Weather Forecasts under the Copernicus Climate Change Service. The selected spatial extent captures the key atmospheric processes influencing air pollution variability across Indonesia, including monsoonal circulation, equatorial convection, and regional-scale pollutant transport.
 
-\section{Results}
 \subsection{Evaluation of general model performance}
 
-\section{Discussion}\label{sec12}
+\section{Discussion}\label{sec4}
 xxxxx.
 
-\section{Conclusion}\label{sec13}
-
-xxxxx.
+\section{Conclusion}\label{sec5}
+kesimpulan adalah
 
 \backmatter
 
@@ -294,44 +292,11 @@ The authors declare that they have no known competing financial interests or per
 \bmhead{Acknowledgements}
 This work was supported by UM Internal Grant non-APBN 2026, Indonesia.
 
-\section*{Declarations}
+\bmhead{Data Availability}
+The data that support the findings of this study are available from the corresponding author open reasonable request.
 
-Some journals require declarations to be submitted in a standardised format. Please check the Instructions for Authors of the journal to which you are submitting to see if you need to complete this section. If yes, your manuscript must contain the following sections under the heading `Declarations':
-
-\begin{itemize}
-\item Funding
-\item Conflict of interest/Competing interests (check journal-specific guidelines for which heading to use)
-\item Ethics approval and consent to participate
-\item Consent for publication
-\item Data availability 
-\item Materials availability
-\item Code availability 
-\item Author contribution
-\end{itemize}
-
-\noindent
-If any of the sections are not relevant to your manuscript, please include the heading and write `Not applicable' for that section. 
-
-%%===================================================%%
-%% For presentation purpose, we have included        %%
-%% \bigskip command. Please ignore this.             %%
-%%===================================================%%
-\bigskip
-\begin{flushleft}%
-Editorial Policies for:
-
-\bigskip\noindent
-Springer journals and proceedings: \url{https://www.springer.com/gp/editorial-policies}
-
-\bigskip\noindent
-Nature Portfolio journals: \url{https://www.nature.com/nature-research/editorial-policies}
-
-\bigskip\noindent
-\textit{Scientific Reports}: \url{https://www.nature.com/srep/journal-policies/editorial-policies}
-
-\bigskip\noindent
-BMC journals: \url{https://www.biomedcentral.com/getpublished/editorial-policies}
-\end{flushleft}
+\bmhead{Author Contribution}
+The main analysis was led by A.A supervised by H.P. The paper was written by A.A and H.P. and edited by other authors.
 
 \begin{appendices}
 
