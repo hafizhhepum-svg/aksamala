@@ -40,11 +40,11 @@
 
 \affil*[1]{\orgdiv{Department of Physics}, \orgname{Universitas Negeri Malang}, \orgaddress{\street{Jl. Semarang No. 5}, \city{Malang}, \postcode{65145}, \state{Malang}, \country{Indonesia}}}
 
-\abstract{Air pollution and climate change are general problems for society. This paper proposes an integrated analysis of the Air Quality Index (AQI) and meteorological conditions over Indonesia. The column-based data integration model is applied to create integrated data of the Air Quaility Index and meteorological conditions. The integrated data is then used to generate a causal graph using the PC algorithm. The causal graph reveals that there exist casual relationships between pollutants and meteorological conditions, e.g, humidity, rainfall, wind speed, and duration of sunshine affect particulate matter 10 (PM$_{10}$), wind speed affects sulfur dioxide SO$_{2}$; temperature affects ozone (O$_{3}$). The historical data records that the average wind speed is decreased and the nubre of unhealthy days has risen. Ozone and particulate matter are two pollutants that mainly influence poor air quality in Jakarta. The integrated data is also used to train Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) for forecasting. Experimental results show that LSTM using integrated data produces smaller errors for forecasting AQI and meteorological conditions.
+\abstract{Air pollution and climate change are general problems for society. This paper proposes an integrated analysis of the Air Quality Index (AQI) and meteorological conditions over Indonesia. The column-based data integration model is applied to create integrated data of the Air Quaility Index and meteorological conditions. The integrated data is then used to generate a causal graph using the PC algorithm. The causal graph reveals that there exist casual relationships between pollutants and meteorological conditions, e.g, humidity, rainfall, wind speed, and duration of sunshine affect particulate matter 10 (PM$_{10}$), wind speed affects sulfur dioxide SO$_{2}$; temperature affects ozone (O$_{3}$). The historical data records that the average wind speed is decreased and the nubre of unhealthy days has risen. Ozone and particulate matter are two pollutants that mainly influence poor air quality in Jakarta. The integrated data is also used to train Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) for forecasting. Experimental results show that LSTM using integrated data produces smaller errors for forecasting AQI and meteorological conditions. (Paper Jakarta)
 }
 The results showed that
 highlighting this study's importance in supporting strategic planning and providing an early warning system to reduce outdoor activity during extreme pollution.
-\keywords{air pollution, machine learning, GHE}
+\keywords{air pollution, machine learning, GHE,}
 
 
 \maketitle
@@ -55,13 +55,14 @@ highlighting this study's importance in supporting strategic planning and provid
 	The Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG) reported that in 2024, air quality and meteorological conditions in Indonesia exhibited a strong interconnection. Elevated concentrations of greenhouse gases (CO$_2$, CH$_4$, and N$_2$O) contributed to an increase in the national mean surface temperature of up to $0.8^{\circ}\mathrm{C}$, making 2024 the warmest year on record. These conditions were also associated with the occurrence of acid rain, with observed rainfall pH values ranging from 4.33 to 6.53 across multiple regions \cite{BidangKlimatologiBadanMeteorologi2024}.
 	Many studies have adopted ML models for Air Pollution Standard prediction across various urban regions, leveraging multiple pollutants and meteorological parameters.
 	This study was conducted to examine the relationship between air pollutants and meteorological conditions in Indonesia. The main issue in this study is how to analyze the relationship between surface-level air pollution and meteorological conditions in Indonesia. This article proposes an integrated analysis between the Air Quality Index (AQI) and meteorological conditions using a machine learning approach, integrating surface air pollutant concentrations to capture the dynamic interaction between air quality and atmospheric variability. This article applies the Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) methods to predict AQI values and meteorological variables. The main contribution of this research is the development of an integration framework to analyze the interdependence between variables and to predict future AQI values and meteorological conditions, with a case study in Indonesia.
-
+	The historical data of Air Quality Index (AQI) and meteorological conditions in Jakarta record some important information. The increasing number of unhealthy days happened from 2010-2013, 2015-2018, and 2020-2021. It is understandable that in 2020, the air quality was getting better because of the limited activities during the Covid-19 outbreak. However, the number of unhealthy days raised in 2021. From 2010 to 2021 the number of unhealthy days is always higher that healthy days. This is an early warning for the society that poor air quality might worsen if it is not managed properly. The average temperature slightly increased around 0.55$^\circ$ from 2013 to 2019 and the average wind speed decreased.
 
 Satellite
 TROPOMI provides global daily coverage in continuous 5.5 $\times$ km$^{2}$ (nadir) pixels, increasing the data density relative to GOSAT by more than 2 orders of magnitude through the use of an imaging grating spectrometer. It measures in the 2.3 $\mu$m band, where the CO$_{2}$ proxy approach is not possible, with a spectral resolution of 0.25 nm. Retrieval of XCH$_{4}$ by TROPOMI employs a full-physics approach in which surface albedo and atmospheric scattering properties are retrieved to gether with XCH$_{4}$, utilizing additional information from the near-infrared (NIR) band to TROPOMI
 
 We considered two candidates ML methods (Gated Recurrent Unit and Long Short-Term Memory) that rely on ensembles of decision trees (Kingsford, 2008-01). 
 
+Machine learning (ML) algorithm have recently introduced as innovative developments in the bottom-up approaches to upscale data-driven in-situ models to spatially explicit gridded estimates. (paper thailand).
 \section{Results}\label{sec2}
 
 \section{Methods}\label{sec11}
@@ -89,7 +90,6 @@ I = \frac{I_a - I_b}{L_a - L_b} \left( L_x - L_b \right) + I_b
 \end{equation}
 
 The AQI standard values are categorized as good (1--50), moderate (51--100), unhealthy (101--200), very unhealthy (201--300), and hazardous ($\geq$301).
-
 
 In this study, the utilized models have been developed and enhanced in order to improve the accuracy rate. Through developing the model, path loss datasets have been acquired. The datasets have been divided into two parts, training and testing. The training sets covered 80\% of the data utilized, while the remaining 20\% was used for testing. In order to ensure the validation of the model, 15\% of the training data has been allocated to validate the performance of the model. Furthermore, the datasets have been pre-processed and the missed values have been estimated through interpolation method. On the other hand, in order to get the intended consequent modeling outcome, hyper-parametr tuning or optimization defines the robust process of identifying and determining the optimal viable values of hyper-parameter (paper prediction malaysia)
 
@@ -210,6 +210,21 @@ The datasets are containing less than 5\% missing values. The missing values are
 
 (Noted) perlu gambar 2. A casual graph is generated from AQI and meteorological conditions.
 
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & $R^{2}$ & RMSE & MAPE & slope \\
+\hline
+GRU & A2 & A3 & A4 & A5 \\
+\hline
+LSTM & B2 & B3 & B4 & B5 \\
+\hline
+\end{tabular}
+\caption{Comparison of model performance on the testing dataset}
+\end{table}
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{./picture/correlation_heatmap.pdf}
@@ -228,8 +243,18 @@ This paper uses the PC algorithm from $bnlearn$ in the R package. A causal graph
 (Noted) Tuliskan semua metodenya disini
 
 \subsection{Meteorological dataset}
-ERA5-land (Munoz Sabater, 2019) provides a dataset for land components from ERA5, the fifth-generation climate reanalysis dataset provided by the Copernicus Climate Change Service at the European Centre for Medium-Range Weather Forecasts. Following studies (), we adopted seven meteorological components from the reanalysis dataset: temperature and dew-point temperature at a 2 m height, total evaporation, surface pressure, precipitation and wind components at a 10 m height. We also approximated relative humidity and wind speed using Eq
+ERA5-land (Munoz Sabater, 2019) provides a dataset for land components from ERA5, the fifth-generation climate reanalysis dataset provided by the Copernicus Climate Change Service at the European Centre for Medium-Range Weather Forecasts. Following studies (), we adopted seven meteorological components from the reanalysis dataset: temperature and dew-point temperature at a 2 m height, total evaporation, surface pressure, precipitation and wind components at a 10 m height. We also approximated relative humidity and wind speed using Eq.
+
+ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades. Data is available from 1940 onwards. ERA5 provides hourly estimates for a large number of atmospheric, ocean-wave and land-surface quantities. An uncertainty estimate is sampled by an underlying 10-member ensemble at three-hourly intervals. Ensemble mean and spread have been pre-computed for convenience. Such uncertainty estimates are closely related to the information content of the available observing system which has evolved considerably over time. They also indicate flow-dependent sensitive areas. To facilitate many climate applications, monthly-mean averages have been pre-calculated too, though monthly means are not available for the ensemble mean and spread.
+ERA5 is a data product (dataset) produced by assimilating many observational sources. It uses satellite observations, but it is not generated by one satellite mission.
+
+
+Atmospheric variables used in this study were obtained from the ERA5 reanalysis produced by the European Centre for Medium-Range Weather Forecasts through the Copernicus Climate Change Service data archive. The dataset was downloaded using the Copernicus Climate Data Store (CDS) in NetCDF format and subsequently processed using Python-based scientific libraries. The variables analyzed include outgoing longwave radiation (OLR), near-surface air temperature (2 m temperature), and atmospheric trace gases such as nitrogen oxides (NO) and sulfur dioxide (SO₂), obtained from the atmospheric composition products associated with the Copernicus reanalysis system. All variables were extracted over the Indonesian domain (6° N–11° S, 95° E–141° E) at a horizontal resolution of 0.25°. The preprocessing procedure involved spatial subsetting of the study region, temporal filtering, unit standardization, and removal of missing values. To reduce short-term variability and emphasize large-scale atmospheric behavior, hourly data were aggregated into daily and monthly means. Spatial averaging was then applied across the regional domain using area-weighted averaging based on latitude to account for grid cell differences. This spatiotemporal aggregation approach enables robust analysis of regional atmospheric variability and long-term climate signals over the Maritime Continent.
+
+
+
 \subsection{Study Area}
+Indonesia archipelago
 Thailand is located at the center of the Indochinese peninsula, has the 10th largest economy in Asia and hosts a population of almost 70 million people (Long and Ascent, 2020). The country is divided into 76 administrative provinces as primary local government units and the capital Bangkok. In this study, considering the meteorological division system in Thailand (), we divided the country into five regions to analyze regional characteristics: north, northeast, central, east and south. Despite the low air quality in Thailand, ground monitoring stations are sparse and mostly concentrated in the central region, which is contains 29 of the 67 stations used in this study. For the remaining regions, 15, 5, 11 and 7 stations are distributed in the north, northeast, east, and south, respectively.
 
 \section{Results}
