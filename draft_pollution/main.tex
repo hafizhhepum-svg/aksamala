@@ -70,7 +70,7 @@ TROPOMI provides global daily coverage in continuous 5.5 $\times$ km$^{2}$ (nadi
 
 We considered two candidates ML methods (Gated Recurrent Unit and Long Short-Term Memory) that rely on ensembles of decision trees (Kingsford, 2008-01). 
 
-Machine learning (ML) algorithm have recently introduced as innovative developments in the bottom-up approaches to upscale data-driven in-situ models to spatially explicit gridded estimates. (paper thailand).
+Machine learning (ML) algorithm have recently introduced as innovative developments in the bottom-up approaches to upscale data-driven in-situ models to spatially explicit gridded estimates \cite{Son2023}.
 
 Research Gap - Despite increasing concerns about air pollution in Indonesia, comprehensive studies on Air Quality Index (AQI) dynamics across the Indonesian archipelago remain limited. Most previous research has focused on localized urban air quality assessments, particularly in major cities such as Jakarta and Surabaya, and often relies primarily on ground-based monitoring stations. However, the spatial coverage of monitoring networks across Indonesia is still sparse and uneven, especially over remote islands and rural regions. Furthermore, conventional statistical approaches used in many studies may not adequately capture the complex nonlinear interactions between atmospheric pollutants and meteorological factors. Although machine learning methods have been widely applied in air quality studies in North America, Europe, and East Asia, their application in Indonesia remains relatively scarce, particularly in studies integrating multiple pollutant species such as NO$_2$, CO, SO$_2$, and PM$_{2.5}$ with large-scale atmospheric datasets. As a result, there is still a significant knowledge gap in understanding the large-scale spatiotemporal variability and predictive behavior of air pollution across the Indonesian Maritime Continent.
 
@@ -108,7 +108,7 @@ The AQI standard values are categorized as good (1--50), moderate (51--100), unh
 In this study, the utilized models have been developed and enhanced in order to improve the accuracy rate. Through developing the model, path loss datasets have been acquired. The datasets have been divided into two parts, training and testing. The training sets covered 80\% of the data utilized, while the remaining 20\% was used for testing. In order to ensure the validation of the model, 15\% of the training data has been allocated to validate the performance of the model. Furthermore, the datasets have been pre-processed and the missed values have been estimated through interpolation method. On the other hand, in order to get the intended consequent modeling outcome, hyper-parametr tuning or optimization defines the robust process of identifying and determining the optimal viable values of hyper-parameter (paper prediction malaysia)
 
 \subsection{Long Short-Term Memory (LSTM).}
-Long short-term memory (LSTM) is an efficient gradient-based method~\cite{}(paper jakarta). LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory. Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
+Long short-term memory (LSTM) is an efficient gradient-based method~\cite{Handhayani2023}. LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory. Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
 
 Furthermore, $i_t$, $f_t$, and $o_t$ represent the input gate, forget gate,  and output gate, while $W^{(i)}$, $W^{(f)}$, $W^{(o)}$, $W^{(c)}$,  $U^{(i)}$, $U^{(f)}$, $U^{(o)}$, and $U^{(c)}$ are the corresponding weight matrices.  The mathematical formulation of the LSTM memory unit is given by Eqs.~(4)--(9) as follows:
 
@@ -320,9 +320,8 @@ An appendix contains supplementary information that is not an essential part of 
 
 \end{appendices}
 
-\bibliography{atmospheric}% common bib file
-%% if required, the content of .bbl file can be included here once bbl is generated
-%%\input sn-article.bbl
-
+\bibliographystyle{unsrt}
+\bibliography{atmospheric}
 
 \end{document}
+
