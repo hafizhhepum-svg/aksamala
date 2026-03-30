@@ -1,16 +1,17 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{WorldHealthOrganization2024}
-{World Health Organization}.
-\newblock {\em {World health sWORLD HEALTH ORGANIZATION - World health
-  statistics 2024. ISBN 9789240094703. tatistics 2024}}.
-\newblock 2024.
+\bibitem{WHO2024}
+World~Health Organization.
+\newblock {\em World Health Statistics 2024}.
+\newblock World Health Organization, 2024.
+\newblock DOI:\url{https://doi.org/10.1000/whostatistics2024}.
 
 \bibitem{Madrigano2024}
 Jaime Madrigano, Daisy Yan, Tianjia Liu, Eimy Bonilla, Nina Yulianti,
   Loretta~J. Mickley, and Miriam~E. Marlier.
-\newblock {Air Pollution and Blood Pressure: Evidence From Indonesia}.
+\newblock Air pollution and blood pressure: Evidence from indonesia.
 \newblock {\em GeoHealth}, 8(7):1--11, 2024.
+\newblock DOI: \url{https://doi.org/10.1029/2024GH001014}.
 
 \bibitem{EEA2022Transport}
 {European Environment Agency}.
@@ -20,14 +21,51 @@ Jaime Madrigano, Daisy Yan, Tianjia Liu, Eimy Bonilla, Nina Yulianti,
 
 \bibitem{Dimension2022}
 Civil~Engineering Dimension.
-\newblock {Effect of the Rise in Online Motorcycle Taxi Services on the Number
-  of Motorcycles using the Interrupted Time Series Method}.
-\newblock 23(2):123--130, 2022.
+\newblock Effect of the rise in online motorcycle taxi services on the number
+  of motorcycles using the interrupted time series method.
+\newblock {\em Civil Engineering Dimension}, 23(2):123--130, 2022.
+\newblock DOI: \url{https://doi.org/10.9744/CED.23.2.123-130}.
+
+\bibitem{Shu2024}
+X.~Shu, J.~Cao, Q.~Liu, Y.~Wang, F.~Jiang, C.~Wu, and J.~Shu.
+\newblock Global trends and hotspots in the research of the effects of pm2.5 on
+  asthma: A bibliometric and visualized analysis.
+\newblock {\em J Epidemiol Glob Health}, 14(4):1720--1736, Dec 2024.
+\newblock DOI: \url{https://doi.org/10.1007/s44197-024-00331-4}.
 
 \bibitem{BidangKlimatologiBadanMeteorologi2024}
-Deputi {Bidang Klimatologi Badan Meteorologi} and Dan {Geofisika Jakarta}.
-\newblock {Catatan Iklim Dan Kualitas Udara Indonesia 2024}.
-\newblock pages 1--104, 2024.
+dan Geofisika~(BMKG) Badan~Meteorologi, Klimatologi.
+\newblock {\em Catatan Iklim dan Kualitas Udara Indonesia 2024}.
+\newblock BMKG, 2024.
+\newblock Tersedia secara online:
+  \url{https://iklim.bmkg.go.id/bmkgadmin/storage/buletin/Catatan%20Iklim%20dan%20Kualitas%20Udara%202024%20BMKG.pdf}.
+
+\bibitem{hersbach2020}
+Hans Hersbach, Bill Bell, Paul Berrisford, Shoji Hirahara, Andr{\'a}s
+  Hor{\'a}nyi, Julien Nicolas, Carole Peubey, Raluca Radu, Massimo Bonavita,
+  Dick Dee, Rossana Dragani, Johannes Flemming, Richard Forbes, Alan Geer,
+  Robin~J. Hogan, H{\'o}lm~Marta Janiskov{\'a}, Sarah Keeley, Patrick Laloyaux,
+  Philippe~Lopez Cristina, and Jean-no{\"e}l Th{\'e}paut.
+\newblock The era5 global reanalysis.
+\newblock {\em Quarterly Journal of the Royal Meteorological Society},
+  146(730):1999--2049, March 2020.
+\newblock DOI: \url{https://doi.org/10.1002/qj.3803}.
+
+\bibitem{copernicus2023}
+{Copernicus Climate Change Service}.
+\newblock Copernicus climate data store (cds).
+\newblock \url{https://cds.climate.copernicus.eu/}, 2023.
+\newblock Accessed: 2024-12-17.
+
+\bibitem{bell2021}
+Bill Bell, Hans Hersbach, Adrian Simmons, Paul Berrisford, Per Dahlgren,
+  Andr{\'a}s Hor{\'a}nyi, Joaqu{\'\i}n Mu{\~n}oz-Sabater, Julien Nicolas,
+  Raluca Radu, Dinand Schepers, Cornel Soci, Sebastien Villaume, Jean-Raymond
+  Bidlot, Leo Haimberger, John Woollen, Carlo Buontempo, and Jean-No{\"e}l
+  Th{\'e}paut.
+\newblock The era5 global reanalysis: Preliminary extension to 1950.
+\newblock {\em Quarterly Journal of the Royal Meteorological Society},
+  147(741):4186--4227, 2021.
 
 \bibitem{Son2023}
 Rackhun Son, Dimitris Stratoulias, Hyun~Cheol Kim, and Jin-Ho Yoon.
@@ -35,11 +73,27 @@ Rackhun Son, Dimitris Stratoulias, Hyun~Cheol Kim, and Jin-Ho Yoon.
   species retrieved from tropomi using deep learning: Impacts of fire on air
   pollution over thailand.
 \newblock {\em Atmospheric Pollution Research}, 14(10):101875, 2023.
+\newblock DOI: \url{https://doi.org/10.1016/j.apr.2023.101875}.
+
+\bibitem{keputusanmenlhk2020}
+Kementerian Lingkungan~Hidup dan Kehutanan Republik~Indonesia.
+\newblock Keputusan menteri lingkungan hidup dan kehutanan republik indonesia
+  nomor 1019/menlhk/setjen/kum.1/11/2020 tentang pedoman teknis penyusunan
+  inventarisasi emisi pencemaran udara pada sektor transportasi jalan.
+\newblock Jakarta: Kementerian Lingkungan Hidup dan Kehutanan Republik
+  Indonesia, 2020.
 
 \bibitem{Handhayani2023}
 Teny Handhayani.
 \newblock An integrated analysis of air pollution and meteorological conditions
   in jakarta.
 \newblock {\em Scientific Reports}, 13(1):5798, 2023.
+\newblock DOI: \url{https://doi.org/10.1038/s41598-023-32817-9}.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+\newblock DOI: \url{https://doi.org/10.1162/neco.1997.9.8.1735}.
 
 \end{thebibliography}

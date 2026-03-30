@@ -1,5 +1,4 @@
-\documentclass[sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
-
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% 
 \usepackage{graphicx}%
 \usepackage{multirow}%
 \usepackage{amsmath,amssymb,amsfonts}%
@@ -58,15 +57,28 @@ Air pollution has emerged as a critical environmental challenge with significant
 \section{Introduction}\label{sec1}
 Latar belakang sejarahnya, ML, 
 
-	The World Health Organization (WHO) estimates that approximately 7 million deaths worldwide each year are attributable to air pollution \cite{WorldHealthOrganization2024}. In Indonesia, air pollution is estimated to reduce average life expectancy by about 1.2 years, resulting in an estimated total loss of 309 million life-years due to air pollution \cite{Madrigano2024}. The transportation sector is identified as the primary source of air pollution; according to the European Environment Agency (EEA), transportation activities contribute approximately $56{,}5\%$ of total air pollutant emissions \cite{EEA2022Transport}. Moreover, the rapid growth in motor vehicle ownership has exacerbated emission levels, with the number of registered motor vehicles in Indonesia reaching 146.8 million units in 2018 and exhibiting an average annual growth rate of $8{,}3\%$ \cite{Dimension2022}.
-	Particulate matter with a diameter of $\leq 2.5,\mu\text{m}$ (\textit{PM}${2.5}$) is one of the major forms of air pollution that poses serious risks to human health. \textit{PM}${2.5}$ consists of {\itshape primary} and {\itshape secondary} particles, the latter being formed through chemical reactions in the atmosphere, and is commonly associated with various gaseous pollutants such as {\itshape carbon monoxide} (CO), {\itshape nitrogen dioxide} (NO$_2$), and {\itshape sulfur dioxide} (SO$2$). The concentration of \textit{PM}${2.5}$ is considered to be at an unhealthy level when it exceeds air quality threshold values, namely above 55.5~$\mu$g/m$^3$ according to the Indonesian Air Pollution Standard Index (ISPU), or above 15~$\mu$g/m$^3$ based on the World Health Organization (WHO) air quality guidelines.
+	The World Health Organization (WHO) estimates that approximately 7 million deaths worldwide each year are attributable to air pollution \cite{WHO2024}. In Indonesia, air pollution is estimated to reduce average life expectancy by about 1.2 years, resulting in an estimated total loss of 309 million life-years due to air pollution \cite{Madrigano2024}. The transportation sector is identified as the primary source of air pollution; according to the European Environment Agency (EEA), transportation activities contribute approximately $56{,}5\%$ of total air pollutant emissions \cite{EEA2022Transport}. Moreover, the rapid growth in motor vehicle ownership has exacerbated emission levels, with the number of registered motor vehicles in Indonesia reaching 146.8 million units in 2018 and exhibiting an average annual growth rate of $8{,}3\%$ \cite{Dimension2022}.
+	Particulate matter with a diameter of $\leq 2.5,\mu\text{m}$ (\textit{PM}${2.5}$) is one of the major forms of air pollution that poses serious risks to human health. \textit{PM}${2.5}$ consists of {\itshape primary} and {\itshape secondary} particles, the latter being formed through chemical reactions in the atmosphere, and is commonly associated with various gaseous pollutants such as {\itshape carbon monoxide} (CO), {\itshape nitrogen dioxide} (NO$_2$), and {\itshape sulfur dioxide} (SO$2$) \cite{Shu2024} . The concentration of \textit{PM}${2.5}$ is considered to be at an unhealthy level when it exceeds air quality threshold values, namely above 55.5~$\mu$g/m$^3$ according to the Indonesian Air Pollution Standard Index (ISPU), or above 15~$\mu$g/m$^3$ based on the World Health Organization (WHO) air quality guidelines.
 	The Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG) reported that in 2024, air quality and meteorological conditions in Indonesia exhibited a strong interconnection. Elevated concentrations of greenhouse gases (CO$_2$, CH$_4$, and N$_2$O) contributed to an increase in the national mean surface temperature of up to $0.8^{\circ}\mathrm{C}$, making 2024 the warmest year on record. These conditions were also associated with the occurrence of acid rain, with observed rainfall pH values ranging from 4.33 to 6.53 across multiple regions \cite{BidangKlimatologiBadanMeteorologi2024}.
 	Many studies have adopted ML models for Air Pollution Standard prediction across various urban regions, leveraging multiple pollutants and meteorological parameters.
 	This study was conducted to examine the relationship between air pollutants and meteorological conditions in Indonesia. The main issue in this study is how to analyze the relationship between surface-level air pollution and meteorological conditions in Indonesia. This article proposes an integrated analysis between the Air Quality Index (AQI) and meteorological conditions using a machine learning approach, integrating surface air pollutant concentrations to capture the dynamic interaction between air quality and atmospheric variability. This article applies the Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) methods to predict AQI values and meteorological variables. The main contribution of this research is the development of an integration framework to analyze the interdependence between variables and to predict future AQI values and meteorological conditions, with a case study in Indonesia.
 	The historical data of Air Quality Index (AQI) and meteorological conditions in Jakarta record some important information. The increasing number of unhealthy days happened from 2010-2013, 2015-2018, and 2020-2021. It is understandable that in 2020, the air quality was getting better because of the limited activities during the Covid-19 outbreak. However, the number of unhealthy days raised in 2021. From 2010 to 2021 the number of unhealthy days is always higher that healthy days. This is an early warning for the society that poor air quality might worsen if it is not managed properly. The average temperature slightly increased around 0.55$^\circ$ from 2013 to 2019 and the average wind speed decreased.
 
 Satellite
-TROPOMI provides global daily coverage in continuous 5.5 $\times$ km$^{2}$ (nadir) pixels, increasing the data density relative to GOSAT by more than 2 orders of magnitude through the use of an imaging grating spectrometer. It measures in the 2.3 $\mu$m band, where the CO$_{2}$ proxy approach is not possible, with a spectral resolution of 0.25 nm. Retrieval of XCH$_{4}$ by TROPOMI employs a full-physics approach in which surface albedo and atmospheric scattering properties are retrieved to gether with XCH$_{4}$, utilizing additional information from the near-infrared (NIR) band to TROPOMI
+ERA5 is the fifth-generation global atmospheric reanalysis dataset from the 
+European Centre for Medium-Range Weather Forecasts (ECMWF), produced using 
+4D-Var data assimilation in the IFS Cycle 41r2 model, which integrates 
+observations from diverse sources including satellites, radiosondes, surface 
+stations, aircraft, and GPS radio occultation \cite{hersbach2020, copernicus2023}. 
+ERA5 provides a spatial resolution of $0.25^\circ \times 0.25^\circ$, 137 
+vertical levels up to $\sim$80 km, and hourly temporal resolution \cite{hersbach2020}. 
+The dataset offers more than 200 atmospheric and surface parameters, covering 
+temperature, wind, humidity, precipitation, radiation, air pollutants 
+(PM$_{2.5}$, PM$_{10}$, NO$_2$, SO$_2$, O$_3$, CO), 
+boundary layer height (BLH), as well as land surface and ocean variables 
+\cite{hersbach2020, bell2021}. ERA5 is freely accessible through the Copernicus 
+Climate Data Store (CDS) in NetCDF and GRIB formats, and can be retrieved via 
+the CDS website or API for large-scale automated downloads \cite{copernicus2023}.
 
 We considered two candidates ML methods (Gated Recurrent Unit and Long Short-Term Memory) that rely on ensembles of decision trees (Kingsford, 2008-01). 
 
@@ -80,6 +92,8 @@ Framework Metdology
 The methodological framework of this study consists of several stages, including data acquisition, preprocessing, feature engineering, machine learning modeling, and model evaluation. Atmospheric and meteorological variables are first obtained from ERA5 datasets and satellite-based atmospheric composition products, while pollutant concentration data (NO$_2$, CO, SO$_2$, and PM$_{2.5}$) are compiled from available air quality monitoring networks. The datasets are then spatially and temporally aligned over the Indonesian domain and processed through data cleaning, normalization, and missing-value treatment. Relevant meteorological predictors such as temperature, humidity, wind speed, and radiation are incorporated as input features for the machine learning models. Several supervised learning algorithms are subsequently applied to estimate and predict AQI variability, including regression-based and ensemble learning approaches. Model performance is evaluated using standard statistical metrics such as the coefficient of determination (R²), root mean square error (RMSE), and mean absolute error (MAE). This framework allows the identification of dominant drivers of air pollution variability and improves predictive understanding of AQI dynamics over the complex atmospheric environment of the Indonesian archipelago.
 
 \section{Methods}\label{sec3}
+
+\subsection{Boundary Layer Height (BLH)}
 Konsentrasi massa aerosol di permukaan diestimasi dari massa kolom aerosol dengan mempertimbangkan tinggi lapisan batas atmosfer (*boundary layer height*, BLH). Dengan asumsi bahwa aerosol tercampur secara homogen di dalam boundary layer setinggi $H$, massa kolom aerosol pada boundary layer ($\mathrm{TC}_{\mathrm{BL}}$, kg m$^{-2}$) dapat didekati sebagai hasil kali antara konsentrasi massa aerosol permukaan dan tinggi boundary layer, yaitu $\mathrm{TC}_{\mathrm{BL}} \approx C_{\mathrm{surf}} \cdot H$. Berdasarkan hubungan tersebut, konsentrasi massa aerosol di permukaan dapat dihitung melalui
 
 \begin{equation}
@@ -96,19 +110,19 @@ Pendekatan ini banyak digunakan dalam studi penginderaan jauh untuk menghubungka
 
 \subsection{Air Quality Index (AQI)}
 
-The Ministry of Environment and Forestry of the Republic of Indonesia measures the Air Quality Index (AQI) using Eq.~(1). In this equation, $I$, $I_a$, $I_b$, $L_a$, $L_b$, and $L_x$ represent the AQI value, the upper AQI limit, the lower AQI limit, the upper limit of ambient concentration, the lower limit of ambient concentration, and the measured ambient concentration, respectively.
+The Ministry of Environment and Forestry of the Republic of Indonesia measures the Air Quality Index (AQI) using Eq.~(1). In this equation, $I$, $I_a$, $I_b$, $L_a$, $L_b$, and $L_x$ represent the AQI value, the upper AQI limit, the lower AQI limit, the upper limit of ambient concentration, the lower limit of ambient concentration, and the measured ambient concentration, respectively \cite{keputusanmenlhk2020}.
 
 \begin{equation}
 I = \frac{I_a - I_b}{L_a - L_b} \left( L_x - L_b \right) + I_b
 \tag{1}
 \end{equation}
 
-The AQI standard values are categorized as good (1--50), moderate (51--100), unhealthy (101--200), very unhealthy (201--300), and hazardous ($\geq$301).
+The AQI standard values are categorized as good (1--50), moderate (51--100), unhealthy (101--200), very unhealthy (201--300), and hazardous ($\geq$301) \cite{keputusanmenlhk2020}.
 
 In this study, the utilized models have been developed and enhanced in order to improve the accuracy rate. Through developing the model, path loss datasets have been acquired. The datasets have been divided into two parts, training and testing. The training sets covered 80\% of the data utilized, while the remaining 20\% was used for testing. In order to ensure the validation of the model, 15\% of the training data has been allocated to validate the performance of the model. Furthermore, the datasets have been pre-processed and the missed values have been estimated through interpolation method. On the other hand, in order to get the intended consequent modeling outcome, hyper-parametr tuning or optimization defines the robust process of identifying and determining the optimal viable values of hyper-parameter (paper prediction malaysia)
 
 \subsection{Long Short-Term Memory (LSTM).}
-Long short-term memory (LSTM) is an efficient gradient-based method~\cite{Handhayani2023}. LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory. Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
+Long short-term memory (LSTM) is an efficient gradient-based method~\cite{Handhayani2023}. LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory \cite{hochreiter1997long} . Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
 
 Furthermore, $i_t$, $f_t$, and $o_t$ represent the input gate, forget gate,  and output gate, while $W^{(i)}$, $W^{(f)}$, $W^{(o)}$, $W^{(c)}$,  $U^{(i)}$, $U^{(f)}$, $U^{(o)}$, and $U^{(c)}$ are the corresponding weight matrices.  The mathematical formulation of the LSTM memory unit is given by Eqs.~(4)--(9) as follows:
 
@@ -304,24 +318,10 @@ The main analysis was led by A.A supervised by H.P. The paper was written by A.A
 
 An appendix contains supplementary information that is not an essential part of the text itself but which may be helpful in providing a more comprehensive understanding of the research problem or it is information that is too cumbersome to be included in the body of the paper.
 
-%%=============================================%%
-%% For submissions to Nature Portfolio Journals %%
-%% please use the heading ``Extended Data''.   %%
-%%=============================================%%
-
-%%=============================================================%%
-%% Sample for another appendix section			       %%
-%%=============================================================%%
-
-%% \section{Example of another appendix section}\label{secA2}%
-%% Appendices may be used for helpful, supporting or essential material that would otherwise 
-%% clutter, break up or be distracting to the text. Appendices can consist of sections, figures, 
-%% tables and equations etc.
 
 \end{appendices}
 
-\bibliographystyle{unsrt}
-\bibliography{atmospheric}
-
+\bibliographystyle{unsrt}   % gaya numerik sesuai sn-mathphys-num
+\bibliography{atmospheric}  % nama file .bib
+        
 \end{document}
-
