@@ -1,10 +1,11 @@
 \begin{thebibliography}{10}
 
 \bibitem{WHO2024}
-World~Health Organization.
-\newblock {\em World Health Statistics 2024}.
-\newblock World Health Organization, 2024.
-\newblock DOI:\url{https://doi.org/10.1000/whostatistics2024}.
+{World Health Organization}.
+\newblock {\em {World Health Statistics 2024}}.
+\newblock World Health Organization, Geneva, Switzerland, 2024.
+\newblock Available online:
+  \url{https://www.who.int/publications/i/item/9789240094703}.
 
 \bibitem{Madrigano2024}
 Jaime Madrigano, Daisy Yan, Tianjia Liu, Eimy Bonilla, Nina Yulianti,
@@ -33,12 +34,29 @@ X.~Shu, J.~Cao, Q.~Liu, Y.~Wang, F.~Jiang, C.~Wu, and J.~Shu.
 \newblock {\em J Epidemiol Glob Health}, 14(4):1720--1736, Dec 2024.
 \newblock DOI: \url{https://doi.org/10.1007/s44197-024-00331-4}.
 
-\bibitem{BidangKlimatologiBadanMeteorologi2024}
-dan Geofisika~(BMKG) Badan~Meteorologi, Klimatologi.
-\newblock {\em Catatan Iklim dan Kualitas Udara Indonesia 2024}.
-\newblock BMKG, 2024.
-\newblock Tersedia secara online:
-  \url{https://iklim.bmkg.go.id/bmkgadmin/storage/buletin/Catatan%20Iklim%20dan%20Kualitas%20Udara%202024%20BMKG.pdf}.
+\bibitem{KLHK2020}
+{Kementerian Lingkungan Hidup dan Kehutanan Republik Indonesia}.
+\newblock {Peraturan Menteri Lingkungan Hidup dan Kehutanan Nomor 14 Tahun 2020
+  tentang Indeks Standar Pencemar Udara}.
+\newblock Peraturan Menteri~14, Kementerian Lingkungan Hidup dan Kehutanan
+  Republik Indonesia, Jakarta, Indonesia, 2020.
+\newblock Available online at the official BPK regulatory database:
+  \url{https://peraturan.bpk.go.id/Details/163466/permen-lhk-no-14-tahun-2020}.
+
+\bibitem{WHO2021}
+{World Health Organization}.
+\newblock Who global air quality guidelines: Particulate matter (pm2.5 and
+  pm10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide.
+\newblock Technical report, World Health Organization, Geneva, 2021.
+\newblock https://www.who.int/publications/i/item/9789240034228.
+
+\bibitem{BMKG2024}
+{Badan Meteorologi, Klimatologi, dan Geofisika}.
+\newblock Catatan iklim dan kualitas udara indonesia 2024.
+\newblock Technical report, Badan Meteorologi, Klimatologi, dan Geofisika
+  (BMKG), 2024.
+\newblock Available online at the official BMKG website:
+  \url{https://iklim.bmkg.go.id/bmkgadmin/storage/buletin/Catatan\%20Iklim\%20dan\%20Kualitas\%20Udara\%202024\%20BMKG.pdf}.
 
 \bibitem{hersbach2020}
 Hans Hersbach, Bill Bell, Paul Berrisford, Shoji Hirahara, Andr{\'a}s
@@ -75,13 +93,12 @@ Rackhun Son, Dimitris Stratoulias, Hyun~Cheol Kim, and Jin-Ho Yoon.
 \newblock {\em Atmospheric Pollution Research}, 14(10):101875, 2023.
 \newblock DOI: \url{https://doi.org/10.1016/j.apr.2023.101875}.
 
-\bibitem{keputusanmenlhk2020}
-Kementerian Lingkungan~Hidup dan Kehutanan Republik~Indonesia.
-\newblock Keputusan menteri lingkungan hidup dan kehutanan republik indonesia
-  nomor 1019/menlhk/setjen/kum.1/11/2020 tentang pedoman teknis penyusunan
-  inventarisasi emisi pencemaran udara pada sektor transportasi jalan.
-\newblock Jakarta: Kementerian Lingkungan Hidup dan Kehutanan Republik
-  Indonesia, 2020.
+\bibitem{KLHK}
+{Kementerian Lingkup Hidup dan Kehutanan}.
+\newblock Indeks standar pencemaran udara (ispu) sebagai informasi mutu udara
+  ambien di indonesia, 2022.
+\newblock
+  \url{https://ditppu.menlhk.go.id/portal/read/indeks-standar-pencemar-udara-ispu-sebagai-informasi-mutu-udara-ambien-di-indonesia}.
 
 \bibitem{Handhayani2023}
 Teny Handhayani.
@@ -95,5 +112,68 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
 \newblock DOI: \url{https://doi.org/10.1162/neco.1997.9.8.1735}.
+
+\bibitem{Zheng2021}
+H.~Zheng, F.~Lin, X.~Feng, and Y.~Chen.
+\newblock A hybrid deep learning model with attention-based conv-lstm networks
+  for short-term traffic flow prediction.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems},
+  22(11):6910--6920, 2021.
+
+\bibitem{Liao2023AQILSTMScientificReports}
+Qing Liao et~al.
+\newblock Air quality prediction model based on mrmr--rf feature selection and
+  issa--lstm.
+\newblock {\em Scientific Reports}, 13:13264, 2023.
+\newblock DOI: \url{https://doi.org/10.1038/s41598-023-39838-4}.
+
+\bibitem{Zhao2023SALSTMPM25}
+Liang Zhao et~al.
+\newblock Forecasting hourly pm2.5 concentration with
+  spatial-autocorrelation-based long short-term memory neural network.
+\newblock {\em Atmospheric Environment}, 315:120162, 2023.
+\newblock DOI: \url{https://doi.org/10.1016/j.atmosenv.2023.120162}.
+
+\bibitem{Kocak2024HybridLSTM}
+Emre Ko\c{c}ak et~al.
+\newblock Hybrid model for air quality prediction based on lstm with random
+  search and bayesian optimization techniques.
+\newblock {\em Earth Science Informatics}, 2024.
+\newblock DOI: \url{https://doi.org/10.1007/s12145-024-01514-0}.
+
+\bibitem{Lovric2024EnsembleLSTM}
+Mario Lovri\'{c} et~al.
+\newblock Ensemble machine learning, deep learning, and time series
+  forecasting: Improving prediction accuracy for hourly concentrations of
+  ambient air pollutants.
+\newblock {\em Aerosol and Air Quality Research}, 24:230317, 2024.
+\newblock DOI: \url{https://doi.org/10.4209/aaqr-23-12-oa-0317}.
+
+\bibitem{Zeng2022CEEMDAN_LSTM_AQI}
+Ming Zeng et~al.
+\newblock An ensemble lstm-based aqi forecasting model with
+  decomposition--reconstruction technique via ceemdan and fuzzy entropy.
+\newblock {\em Air Quality, Atmosphere \& Health}, 15:2219--2234, 2022.
+\newblock DOI: \url{https://doi.org/10.1007/s11869-022-01252-6}.
+
+\bibitem{Cho2014GRU}
+Kyunghyun Cho, Bart van Merrienboer, Dzmitry Bahdanau, and Yoshua Bengio.
+\newblock Learning phrase representations using rnn encoder--decoder for
+  statistical machine translation.
+\newblock {\em arXiv preprint arXiv:1406.1078}, 2014.
+\newblock DOI: \url{https://doi.org/10.48550/arXiv.1406.1078}.
+
+\bibitem{Sutskever2014Seq2Seq}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V. Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2014.
+\newblock DOI: \url{https://doi.org/10.48550/arXiv.1409.3215}.
+
+\bibitem{Che2018GRUD}
+Zhengping Che, Sanjay Purushotham, Kyunghyun Cho, David Sontag, and Yan Liu.
+\newblock Recurrent neural networks for multivariate time series with missing
+  values.
+\newblock {\em Scientific Reports}, 8:6085, 2018.
+\newblock DOI: \url{https://doi.org/10.1038/s41598-018-24271-9}.
 
 \end{thebibliography}

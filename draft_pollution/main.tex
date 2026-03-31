@@ -13,6 +13,7 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
+\usepackage{hyperref}
 
 %% as per the requirement new theorem styles can be included as shown below
 \theoremstyle{thmstyleone}%
@@ -58,8 +59,8 @@ Air pollution has emerged as a critical environmental challenge with significant
 Latar belakang sejarahnya, ML, 
 
 	The World Health Organization (WHO) estimates that approximately 7 million deaths worldwide each year are attributable to air pollution \cite{WHO2024}. In Indonesia, air pollution is estimated to reduce average life expectancy by about 1.2 years, resulting in an estimated total loss of 309 million life-years due to air pollution \cite{Madrigano2024}. The transportation sector is identified as the primary source of air pollution; according to the European Environment Agency (EEA), transportation activities contribute approximately $56{,}5\%$ of total air pollutant emissions \cite{EEA2022Transport}. Moreover, the rapid growth in motor vehicle ownership has exacerbated emission levels, with the number of registered motor vehicles in Indonesia reaching 146.8 million units in 2018 and exhibiting an average annual growth rate of $8{,}3\%$ \cite{Dimension2022}.
-	Particulate matter with a diameter of $\leq 2.5,\mu\text{m}$ (\textit{PM}${2.5}$) is one of the major forms of air pollution that poses serious risks to human health. \textit{PM}${2.5}$ consists of {\itshape primary} and {\itshape secondary} particles, the latter being formed through chemical reactions in the atmosphere, and is commonly associated with various gaseous pollutants such as {\itshape carbon monoxide} (CO), {\itshape nitrogen dioxide} (NO$_2$), and {\itshape sulfur dioxide} (SO$2$) \cite{Shu2024} . The concentration of \textit{PM}${2.5}$ is considered to be at an unhealthy level when it exceeds air quality threshold values, namely above 55.5~$\mu$g/m$^3$ according to the Indonesian Air Pollution Standard Index (ISPU), or above 15~$\mu$g/m$^3$ based on the World Health Organization (WHO) air quality guidelines.
-	The Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG) reported that in 2024, air quality and meteorological conditions in Indonesia exhibited a strong interconnection. Elevated concentrations of greenhouse gases (CO$_2$, CH$_4$, and N$_2$O) contributed to an increase in the national mean surface temperature of up to $0.8^{\circ}\mathrm{C}$, making 2024 the warmest year on record. These conditions were also associated with the occurrence of acid rain, with observed rainfall pH values ranging from 4.33 to 6.53 across multiple regions \cite{BidangKlimatologiBadanMeteorologi2024}.
+	Particulate matter with a diameter of $\leq 2.5,\mu\text{m}$ (\textit{PM}${2.5}$) is one of the major forms of air pollution that poses serious risks to human health. \textit{PM}${2.5}$ consists of {\itshape primary} and {\itshape secondary} particles, the latter being formed through chemical reactions in the atmosphere, and is commonly associated with various gaseous pollutants such as {\itshape carbon monoxide} (CO), {\itshape nitrogen dioxide} (NO$_2$), and {\itshape sulfur dioxide} (SO$2$) \cite{Shu2024} . The concentration of PM$_{2.5}$ is classified as unhealthy when it exceeds the air quality threshold of 55.5~$\mu$g/m$^{3}$ according to the Indonesian Air Pollution Standard Index (ISPU) issued by the Ministry of Environment and Forestry Regulation No.~P.14/MENLHK/SETJEN/KUM.1/7/2020 \cite{KLHK2020}, or above 15~$\mu$g/m$^3$ based on the World Health Organization (WHO) air quality guidelines \cite{WHO2021}.
+	The Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG) reported that in 2024, air quality and meteorological conditions in Indonesia exhibited a strong interconnection. Elevated concentrations of greenhouse gases (CO$_2$, CH$_4$, and N$_2$O) contributed to an increase in the national mean surface temperature of up to $0.8^{\circ}\mathrm{C}$, making 2024 the warmest year on record. These conditions were also associated with the occurrence of acid rain, with observed rainfall pH values ranging from 4.33 to 6.53 across multiple regions \cite{BMKG2024}.
 	Many studies have adopted ML models for Air Pollution Standard prediction across various urban regions, leveraging multiple pollutants and meteorological parameters.
 	This study was conducted to examine the relationship between air pollutants and meteorological conditions in Indonesia. The main issue in this study is how to analyze the relationship between surface-level air pollution and meteorological conditions in Indonesia. This article proposes an integrated analysis between the Air Quality Index (AQI) and meteorological conditions using a machine learning approach, integrating surface air pollutant concentrations to capture the dynamic interaction between air quality and atmospheric variability. This article applies the Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) methods to predict AQI values and meteorological variables. The main contribution of this research is the development of an integration framework to analyze the interdependence between variables and to predict future AQI values and meteorological conditions, with a case study in Indonesia.
 	The historical data of Air Quality Index (AQI) and meteorological conditions in Jakarta record some important information. The increasing number of unhealthy days happened from 2010-2013, 2015-2018, and 2020-2021. It is understandable that in 2020, the air quality was getting better because of the limited activities during the Covid-19 outbreak. However, the number of unhealthy days raised in 2021. From 2010 to 2021 the number of unhealthy days is always higher that healthy days. This is an early warning for the society that poor air quality might worsen if it is not managed properly. The average temperature slightly increased around 0.55$^\circ$ from 2013 to 2019 and the average wind speed decreased.
@@ -94,39 +95,40 @@ The methodological framework of this study consists of several stages, including
 \section{Methods}\label{sec3}
 
 \subsection{Boundary Layer Height (BLH)}
-Konsentrasi massa aerosol di permukaan diestimasi dari massa kolom aerosol dengan mempertimbangkan tinggi lapisan batas atmosfer (*boundary layer height*, BLH). Dengan asumsi bahwa aerosol tercampur secara homogen di dalam boundary layer setinggi $H$, massa kolom aerosol pada boundary layer ($\mathrm{TC}_{\mathrm{BL}}$, kg m$^{-2}$) dapat didekati sebagai hasil kali antara konsentrasi massa aerosol permukaan dan tinggi boundary layer, yaitu $\mathrm{TC}_{\mathrm{BL}} \approx C_{\mathrm{surf}} \cdot H$. Berdasarkan hubungan tersebut, konsentrasi massa aerosol di permukaan dapat dihitung melalui
-
+Aerosol mass concentration at the surface is estimated from the aerosol column mass by accounting for the atmospheric boundary layer height (BLH). Assuming  that aerosols are homogeneously mixed within the boundary layer of height $H$, the aerosol column mass within the boundary layer ($\mathrm{TC}_{\mathrm{BL}}$, kg m$^{-2}$) can be approximated as the product of the surface aerosol mass 
+concentration and the boundary layer height, expressed as  $\mathrm{TC}_{\mathrm{BL}} \approx C_{\mathrm{surf}} \cdot H$. Based on this relationship, the surface aerosol mass concentration can be derived as
 \begin{equation}
 C_{\mathrm{surf}} = \frac{\mathrm{TC}_{\mathrm{BL}}}{H},
 \end{equation}
-
-dengan satuan kg m$^{-3}$. Untuk keperluan analisis kualitas udara, konsentrasi tersebut kemudian dikonversi ke satuan $\mu$g m$^{-3}$ dengan mengalikan faktor konversi $10^{9}$, sehingga diperoleh
+in units of kg m$^{-3}$. For air quality analysis purposes, this concentration is then converted to $\mu$g m$^{-3}$ by multiplying by a conversion factor of $10^{9}$.
 
 \begin{equation}
 C_{\mathrm{surf}} = \frac{\mathrm{TC}_{\mathrm{BL}}}{H} \times 10^{9}.
 \end{equation}
-
-Pendekatan ini banyak digunakan dalam studi penginderaan jauh untuk menghubungkan observasi aerosol berbasis kolom dengan konsentrasi aerosol di permukaan, di mana BLH berperan sebagai parameter penghubung utama antara informasi kolom dan kualitas udara permukaan.
+This approach is widely used in remote sensing studies to link column-based aerosol observations with surface aerosol concentrations, where BLH serves as the primary bridging parameter between column information and surface air quality.
 
 \subsection{Air Quality Index (AQI)}
 
-The Ministry of Environment and Forestry of the Republic of Indonesia measures the Air Quality Index (AQI) using Eq.~(1). In this equation, $I$, $I_a$, $I_b$, $L_a$, $L_b$, and $L_x$ represent the AQI value, the upper AQI limit, the lower AQI limit, the upper limit of ambient concentration, the lower limit of ambient concentration, and the measured ambient concentration, respectively \cite{keputusanmenlhk2020}.
+The Ministry of Environment and Forestry of the Republic of Indonesia measures the Air Quality Index (AQI) using Eq.~(1). In this equation, $I$, $I_a$, $I_b$, $L_a$, $L_b$, and $L_x$ represent the AQI value, the upper AQI limit, the lower AQI limit, the upper limit of ambient concentration, the lower limit of ambient concentration, and the measured ambient concentration, respectively \cite{KLHK2020}.
 
 \begin{equation}
 I = \frac{I_a - I_b}{L_a - L_b} \left( L_x - L_b \right) + I_b
 \tag{1}
 \end{equation}
 
-The AQI standard values are categorized as good (1--50), moderate (51--100), unhealthy (101--200), very unhealthy (201--300), and hazardous ($\geq$301) \cite{keputusanmenlhk2020}.
+The AQI standard values are categorized as good (1--50), moderate (51--100), unhealthy (101--200), very unhealthy (201--300), and hazardous ($\geq$301) \cite{KLHK}.
 
 In this study, the utilized models have been developed and enhanced in order to improve the accuracy rate. Through developing the model, path loss datasets have been acquired. The datasets have been divided into two parts, training and testing. The training sets covered 80\% of the data utilized, while the remaining 20\% was used for testing. In order to ensure the validation of the model, 15\% of the training data has been allocated to validate the performance of the model. Furthermore, the datasets have been pre-processed and the missed values have been estimated through interpolation method. On the other hand, in order to get the intended consequent modeling outcome, hyper-parametr tuning or optimization defines the robust process of identifying and determining the optimal viable values of hyper-parameter (paper prediction malaysia)
 
 \subsection{Long Short-Term Memory (LSTM).}
-Long short-term memory (LSTM) is an efficient gradient-based method~\cite{Handhayani2023}. LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory \cite{hochreiter1997long} . Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively. (lanjutkan dari paper jakarta sampai ke persamaan).
+Long short-term memory (LSTM) is an efficient gradient-based method~\cite{Handhayani2023}. LSTM refers to a standard recurrent neural network (RNN) that has long-term memory and short-term memory \cite{hochreiter1997long} . Suppose $\zeta$, $X_{t}$, $S_{t-1}$, $S_t$, $\circ$, $O_t$ the sigmoid function, the preprocessed data, the new state of memory cell, the previous state of the memory cell, the final state of memory cell, Hadamard product, and the final output of the memory unit, respectively.Furthermore, $i_t$, $f_t$, and $o_t$ represent the input gate, forget gate,  and output gate, while $W^{(i)}$, $W^{(f)}$, $W^{(o)}$, $W^{(c)}$,  $U^{(i)}$, $U^{(f)}$, $U^{(o)}$, and $U^{(c)}$ are the corresponding weight matrices.  The mathematical formulation of the LSTM memory unit is given by Eqs.~(4)--(9) \cite{Zheng2021}. Several studies have demonstrated the effectiveness of Long Short-Term Memory (LSTM) networks for air quality and environmental time-series forecasting \cite{Liao2023AQILSTMScientificReports,Zhao2023SALSTMPM25,Kocak2024HybridLSTM,Lovric2024EnsembleLSTM,Zeng2022CEEMDAN_LSTM_AQI}.
 
-Furthermore, $i_t$, $f_t$, and $o_t$ represent the input gate, forget gate,  and output gate, while $W^{(i)}$, $W^{(f)}$, $W^{(o)}$, $W^{(c)}$,  $U^{(i)}$, $U^{(f)}$, $U^{(o)}$, and $U^{(c)}$ are the corresponding weight matrices.  The mathematical formulation of the LSTM memory unit is given by Eqs.~(4)--(9) as follows:
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{picture/lstm.png}
+\caption{Architecture of the LSTM network}
+\end{figure}
 
-tambahkan struktur LSTM Schematic,
 \begin{equation}
 i_t = \sigma \left( W^{(i)} X_t + U^{(i)} O_{t-1} \right),
 \tag{4}
@@ -159,9 +161,13 @@ O_t = o_t \circ \tanh (S_t).
 
 \subsection{Gated recurrent unit (GRU).}
 
-Gated recurrent unit (GRU) is a type of recurrent neural network (RNN) that employs a gating mechanism to control the flow of information.  Let $W_z$, $W_r$, $W$, $U_z$, $U_r$, $U$, $b_z$, $b_r$, and $b$ denote the model parameters, and let $\odot$ represent element-wise multiplication. 
+Gated Recurrent Unit (GRU) is a type of recurrent neural network (RNN) that employs gating mechanisms to regulate the flow of information through hidden states \cite{Cho2014GRU,Sutskever2014Seq2Seq,Che2018GRUD}. Let $W_z$, $W_r$, $W$, $U_z$, $U_r$, $U$, $b_z$, $b_r$, and $b$ denote the model parameters, and let $\odot$ represent element-wise multiplication. For the $j$-th hidden unit, the GRU introduces a reset gate $r_t^j$ and an update gate $z_t^j$ to control the hidden state $h_t^j$ at each time step $t$. The mathematical formulation of the GRU unit is expressed in Eqs.~(10)--(13) as follows:
 
-For the $j$-th hidden unit, GRU introduces a reset gate $r_t^j$ and an update gate $z_t^j$  to regulate the hidden state $h_t^j$ at each time step $t$.  The mathematical formulation of the GRU unit is given by Eqs.~(10)--(13) as follows:
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{picture/gru.jpeg}
+\caption{Architecture of the GRU network}
+\end{figure}
 
 \begin{equation}
 z_t = \sigma \left( W_z X_t + U_z h_{t-1} + b_z \right),

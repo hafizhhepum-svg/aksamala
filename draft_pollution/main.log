@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.3.17)  30 MAR 2026 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.3.17)  31 MAR 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,16 +520,16 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
 
-Package amsthm Warning: Unknown theoremstyle `thmstyleone' on input line 18.
+Package amsthm Warning: Unknown theoremstyle `thmstyleone' on input line 19.
 
 \c@theorem=\count321
 
-Package amsthm Warning: Unknown theoremstyle `thmstyletwo' on input line 22.
+Package amsthm Warning: Unknown theoremstyle `thmstyletwo' on input line 23.
 
 \c@example=\count322
 \c@remark=\count323
 
-Package amsthm Warning: Unknown theoremstyle `thmstylethree' on input line 26.
+Package amsthm Warning: Unknown theoremstyle `thmstylethree' on input line 27.
 
 \c@definition=\count324
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -544,24 +544,24 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 \footinsA=\insert252
 \c@footnoteA=\count326
 
@@ -622,7 +622,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -635,41 +635,41 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count333
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 \c@lstlisting=\count334
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 57.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 58.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 57.
+(Font)              size <8> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 57.
+(Font)              size <8> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 57.
+(Font)              size <8> substituted on input line 58.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 57
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 58
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -677,47 +677,47 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 57.
+(Font)              size <8> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 57.
+(Font)              size <8> substituted on input line 58.
 
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 57
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 58
 .
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 57.
+(Font)              size <6> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.52061> not available
-(Font)              size <6> substituted on input line 57.
+(Font)              size <6> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 57.
+(Font)              size <6> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 57.
+(Font)              size <6> substituted on input line 58.
 
-LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 57.
+LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 58.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 57.
+(Font)              size <5> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.51686> not available
-(Font)              size <5> substituted on input line 57.
+(Font)              size <5> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 57.
+(Font)              size <5> substituted on input line 58.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 57.
+(Font)              size <5> substituted on input line 58.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -725,7 +725,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 57
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 58
 .
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -737,354 +737,399 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Underfull \hbox (badness 2894) in paragraph at lines 109--110
-[]\OT1/cmr/m/n/10 Pendekatan ini banyak digu-nakan dalam studi pengin-der-aan j
-auh untuk
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.3}) has been already used, duplicate ignored
+ [5]
+<picture/lstm.png, id=186, 1541.76pt x 1027.84pt>
+File: picture/lstm.png Graphic file (type png)
+<use picture/lstm.png>
+Package pdftex.def Info: picture/lstm.png  used on input line 128.
+(pdftex.def)             Requested size: 334.79773pt x 223.19267pt.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.132 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.132 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.132 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \begin{equation}
+l.132 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \begin{equation}
+l.137 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \begin{equation}
+l.137 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \begin{equation}
+l.137 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \begin{equation}
+l.137 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.142 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.142 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.142 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \begin{equation}
+l.142 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \begin{equation}
+l.147 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \begin{equation}
+l.147 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \begin{equation}
+l.147 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \begin{equation}
+l.147 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 \begin{equation}
+l.152 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 \begin{equation}
+l.152 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 \begin{equation}
+l.152 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 \begin{equation}
+l.152 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \begin{equation}
+l.157 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \begin{equation}
+l.157 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \begin{equation}
+l.157 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \begin{equation}
+l.157 \begin{equation}
+                      
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.165 
+       <./picture/lstm.png (PNG copy)>]
+<picture/gru.jpeg, id=203, 1400.23125pt x 818.05624pt>
+File: picture/gru.jpeg Graphic file (type jpg)
+<use picture/gru.jpeg>
+Package pdftex.def Info: picture/gru.jpeg  used on input line 168.
+(pdftex.def)             Requested size: 334.79773pt x 195.58855pt.
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \begin{equation}
+l.172 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \begin{equation}
+l.172 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \begin{equation}
+l.172 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \begin{equation}
+l.177 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \begin{equation}
+l.177 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \begin{equation}
+l.177 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \begin{equation}
+l.177 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \begin{equation}
+l.182 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 \begin{equation}
+l.182 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 \begin{equation}
+l.182 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 \begin{equation}
+l.182 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 \begin{equation}
+l.187 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.181 \begin{equation}
+l.187 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.181 \begin{equation}
+l.187 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.181 \begin{equation}
-                      pdfTeX warning (ext4): destination with the same identifi
-er (name{equation.2.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.181 \begin{equation}
+l.187 \begin{equation}
                       
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `math shift' on input line 195.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 189.
+(hyperref)                removing `superscript' on input line 195.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `math shift' on input line 195.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]pdfTeX warning (ext4): destination with the same identifier (name{equation.
-2.3}) has been already used, duplicate ignored
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.197 \begin{equation}
+                       <./picture/gru.jpeg>]pdfTeX warning (ext4): destination 
+with the same identifier (name{equation.2.3}) has been already used, duplicate 
+ignored
 <to be read again> 
                    \relax 
-l.191 \begin{equation}
+l.197 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \begin{equation}
+l.197 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \begin{equation}
+l.197 \begin{equation}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.2.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \begin{equation}
+l.197 \begin{equation}
                       
 
-LaTeX Warning: Reference `eq:meansquarrerror' on page 7 undefined on input line
- 200.
+LaTeX Warning: Reference `eq:meansquarrerror' on page 8 undefined on input line
+ 206.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7pdfTeX warning (ext4): destination with the same identifier (name{equation.2
+ [8pdfTeX warning (ext4): destination with the same identifier (name{equation.2
 .4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.4}) has been already used, duplicate ignored
+l.237 \subsection
+                 {Dataset}pdfTeX warning (ext4): destination with the same iden
+tifier (name{equation.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 
-      ]
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 243.
+l.237 \subsection
+                 {Dataset}]
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 249.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 243.
+(Font)              size <5> substituted on input line 249.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.015> not available
-(Font)              size <5> substituted on input line 243.
+(Font)              size <5> substituted on input line 249.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 243.
+(Font)              size <5> substituted on input line 249.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 243.
+(Font)              size <5> substituted on input line 249.
 
-<./picture/correlation_heatmap.pdf, id=189, 578.16pt x 505.89pt>
+<./picture/correlation_heatmap.pdf, id=219, 578.16pt x 505.89pt>
 File: ./picture/correlation_heatmap.pdf Graphic file (type pdf)
 <use ./picture/correlation_heatmap.pdf>
 Package pdftex.def Info: ./picture/correlation_heatmap.pdf  used on input line 
-258.
+264.
 (pdftex.def)             Requested size: 297.60114pt x 260.40117pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+ [9pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.262 
+l.268 
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
+) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.267 R
+l.273 R
        egional clustering for machine learning analysis - To better capture ...
  <./picture/correlation_heatmap.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+ [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+ [12]
 
 Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 304.
+(hyperref)                than one, level fixed on input line 310.
 
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 307.
+(hyperref)                than one, level fixed on input line 313.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 310.
+(hyperref)                than one, level fixed on input line 316.
 
 (./main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
-Underfull \hbox (badness 1769) in paragraph at lines 37--42
-[]\OT1/cmr/m/n/10 dan Geofisika (BMKG) Badan Mete-o-rologi, Kli-ma-tologi.  \OT
-1/cmr/m/it/10 Catatan Iklim
+ [13]
+Underfull \hbox (badness 1406) in paragraph at lines 54--60
+\OT1/cmr/m/n/10 site: [][]$https : / / iklim . bmkg . go . id / bmkgadmin / sto
+rage / buletin / Catatan % 20Iklim %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--42
-[][]$\OT1/cmr/m/n/10 https : / / iklim . bmkg . go . id / bmkgadmin / storage /
- buletin / Catatan % 20Iklim %
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+[]\OT1/cmr/m/n/10 Kementerian Lingkup Hidup dan Kehutanan.  Indeks stan-dar
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 79--85
-\OT1/cmr/m/n/10 tu-san menteri lingkun-gan hidup dan kehutanan repub-lik indone
--sia nomor
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+\OT1/cmr/m/n/10 pence-maran udara (ispu) seba-gai infor-masi mutu udara ambien
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+\OT1/cmr/m/n/10 di indone-sia, 2022.  [][]$https : / / ditppu . menlhk . go . i
+d / portal / read /
+ []
+
+
+Overfull \hbox (39.25084pt too wide) in paragraph at lines 97--102
+\OT1/cmr/m/n/10 indeks-[]standar-[]pencemar-[]udara-[]ispu-[]sebagai-[]informas
+i-[]mutu-[]udara-[]ambien-[]di-[]indonesia$[][]. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \hbox (badness 1033) in paragraph at lines 131--136
+[]\OT1/cmr/m/n/10 Liang Zhao et al.  Fore-cast-ing hourly pm2.5 con-cen-tra-tio
+n with spatial-
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 153--158
+[]\OT1/cmr/m/n/10 Ming Zeng et al.  An ensem-ble lstm-based aqi fore-cast-ing m
+odel with
  []
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [15]
 (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1097,10 +1142,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5ED84C42A6CE1C6F5A9B8BC61E987665;4200.
  ) 
 Here is how much of TeX's memory you used:
- 13850 strings out of 480247
- 212462 string characters out of 5896151
- 507902 words of memory out of 5000000
- 31493 multiletter control sequences out of 15000+600000
+ 13895 strings out of 480247
+ 213143 string characters out of 5896151
+ 508292 words of memory out of 5000000
+ 31518 multiletter control sequences out of 15000+600000
  490016 words of font info for 113 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
  85i,12n,90p,1898b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1124,10 +1169,10 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (13 pages, 327700 bytes).
+Output written on main.pdf (15 pages, 642696 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
