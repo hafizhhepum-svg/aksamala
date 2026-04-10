@@ -1,1 +1,5 @@
-ini file draft manuscript pollution
+ini draft untuk paper polusi
+
+mengikuti format baku dari springer sciencedirect
+
+
